@@ -1,0 +1,32 @@
+{
+    "dataset1":{
+        "title":"Breast Cancer LLM Evaluation Benchmar",
+    "titleCN":"乳腺癌基准测试",
+    "image":"",
+    "content":"We have developed a breast cancer benchmark to evaluate the performance of artificial intelligence models in pathological image analysis. We obtained 10 whole-slide images (WSIs) from collaborating hospitals, which were annotated by professional pathologists for six key breast cancer features: necrosis, perineural invasion, calcification, lymphovascular invasion, ductal carcinoma in situ (DCIS), and invasive ductal carcinoma (IDC). This resulted in approximately 1,000 high-quality images. Using these data, we evaluated multimodal large language models (MLLMs) and CLIP-like models on the six breast cancer diagnostic tasks. For CLIP models, we used predefined templates and synonym lists, assessing performance based on similarity scores between input images and preset text descriptions. For MLLM models, we combined templates and prompts to guide the models to respond with \"yes\" or \"no\" when answering pathology-related questions. Through this breast cancer benchmark, we aim to assess the performance of artificial intelligence models in pathological image analysis, provide a unified platform for researchers, and promote the advancement of artificial intelligence in the field of breast cancer diagnosis.",
+    "contentCN":"我们开发了一个乳腺癌基准测试，用于评估人工智能模型在病理图像分析方面的性能。我们从合作医院获取了10个全视野切片图像（WSI），由专业病理医生对坏死、神经受侵、钙化、脉管瘤栓、导管原位癌（DCIS）和浸润性导管癌（IDC）等六个乳腺癌特征区域进行了精确标注，最终获得了约1000张高质量的图像数据。利用这些数据，我们对多模态大型语言模型（MLLM）和CLIP类模型在上述六个乳腺癌诊断任务上进行了评测。CLIP模型的测试使用预定义的模板和近义词表，基于输入图像与预设文本的相似度得分进行评估；MLLM模型的测试则结合了模板和提示，引导模型在回答病理相关问题时以“是”或“否”作出回应。通过这个乳腺癌基准测试，我们旨在评估人工智能模型在病理图像分析中的性能，为研究者提供一个统一的平台，促进人工智能在乳腺癌诊断领域的发展。"
+    },
+"dataset3":{
+    "title":"Pathology Knowledge Graph",
+    "titleCN":"病理知识图谱",
+    "image":"/Dataset_files/Pathology_Knowledge_Graph.png",
+    "content":"This project has constructed a pathology knowledge graph covering 20 common diseases, with data sourced from the relevant clinical guidelines published by the National Health Commission of China. By utilizing graphRAG and large language models, we have structured the diagnostic processes, symptom presentations, examination methods, treatment plans, and more for these diseases. We performed entity recognition and relationship extraction on the textual data, automatically constructing nodes and edges within the knowledge graph. The result is a knowledge graph designed for use in medical research, clinical decision support, and disease management systems, helping researchers explore potential disease correlations and develop innovative treatment methods. By integrating large language models, this system also provides doctors with diagnostic insights, treatment suggestions, and personalized medical plans, improving both diagnostic efficiency and accuracy.",
+    "contentCN":"本项目构建了一个涵盖20种常见疾病的病理知识图谱，数据来源于中国国家卫生健康委员会（卫健委）发布的相关诊疗指南。我们通过使用graphRAG和大语言模型，对这些疾病的诊疗流程、症状表现、检查方法、治疗方案等进行结构化处理，对文本数据进行实体识别和关系抽取，自动化构建了知识图谱中的节点和边，完成了一个可供医学研究、临床决策支持和疾病管理系统使用的知识图谱，帮助研究者查询挖掘潜在的疾病关联、创新诊疗方法，通过结合大语言模型，为医生提供疾病诊断、治疗建议以及个性化医疗方案，提升诊疗效率和准确性。"
+
+},
+"dataset4":{
+    "title":"Cleaned Pathology Image-Caption Dataset (public)",
+    "titleCN":"已清理的病理图像-描述数据集（公共）",
+    "image":"",
+    "content":"The pathological image and text dataset collected and organized from public mainly consists of pathological images and their corresponding textual annotations obtained from open sources such as social media platforms, forums, medical papers, pathology tutorial videos, and textbooks. These image-text pairs have been applied with basic cleaning and curation, with descriptions outside the domain of pathology and low-readability textual annotations being removed. The dataset contains valuable multimodal knowledge and their corresponding relationships defined in the area of pathology.",
+    "contentCN":"从公开渠道收集和整理的病理图文数据集，主要包括从社交平台、论坛、医学论文、病理教学视频和教材等来源获得的病理图像和它们所对应的文本注释。这些图像-文本配对经过基本清洗和治理，其中非病理领域的描述和可读性低的文本注释已被去除。数据集中包含有价值的病理多模态知识和对应关系。"
+},
+"dataset5":{
+   "title":"Cleaned Pathology Image-Caption Dataset (all)",
+    "titleCN":"已清理的病理图像-描述数据集（全部）",
+    "image":"",
+    "content":"The pathological image and text dataset collected and organized from both public and non-public primarily includes pathological images and their corresponding textual annotations obtained from open sources such as social media platforms, forums, medical papers, pathology tutorial videos, and textbooks, as well as pathological reports and teaching notes from more specialized cooperative institutions and hospitals that are not publicly accessible. These image-text pairs have been applied with basic cleaning and curation, with descriptions outside the domain of pathology and low-readability textual annotations being removed. The dataset contains more precise multimodal knowledge and corresponding relationships defined in the area of pathology.",
+    "contentCN":"从公开渠道和非公开渠道收集和整理的病理图文数据集，主要包括从社交平台、论坛、医学论文、病理教学视频和教材等开放来源获得的病理图像和它们所对应的文本注释，以及从专业性更强的合作单位、医院等非开放来源获得的病理报告、教学笔记等。这些图像-文本配对经过基本清洗和治理，其中非病理领域的描述和可读性低的文本注释已被去除。数据集中包含更加准确的的病理多模态知识和对应关系。"
+}
+
+}

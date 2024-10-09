@@ -1,0 +1,58 @@
+{
+    "project1":{
+        "title":"Non-pathological Image Filtering",
+        "titleCN":"非病理图像过滤",
+        "image":"product_files/Non-pathological_Image_Filtering.png",
+        "content":"At present, a part of the publicly available pathological image pairs data sets such as Quilt are obtained from crawlers on social networks. However, there are some problems in Quilt dataset, such as non-pathological images mixed in pictures, non-pathological descriptions in text, and incorrect correspondence between pictures and text. These data have adverse effects on the training of multimodal models, which makes the performance of the models on downstream tasks worse. Data filtering can filter out data at a high noise level, and models trained on clean subsets will get better performance on downstream tasks.",
+        "contentCN":"目前，像Quilt这样的公开可获取的病理图像对数据集的一部分是通过社交网络上的爬虫获得的。然而，Quilt数据集存在一些问题，比如非病理图片的混入、文本中的非病理描述、以及图片与文本之间的不正确对应。这些数据对多模态模型的训练产生了不利影响，导致模型在下游任务上的性能下降。数据过滤能够筛选出高噪声水平的数据，而在清洁子集上训练的模型将在下游任务上获得更好的性能。"
+    },
+    "project2":{
+        "title":"MLLM Evaluation in Breast Cancer",
+        "titleCN":"乳腺癌中的多模态大模型评估",
+        "image":"product_files/MLLM_Evaluation_in_Breast_Cancer.JPEG",
+        "content":"Our research is focused on constructing a comprehensive benchmark to evaluate the performance of multimodal large language models (MLLMs) in breast cancer tasks. This benchmark is designed to assess the model's ability to handle a variety of critical tasks, including but not limited to breast-cancer histological subtyping,  breast-cancer histological grading, necrosis recognition, and calcification recognition. By establishing this benchmark, we aim to provide a standardized framework for evaluating how well advanced multimodal models can interpret pathology images and textual data in the context of breast cancer diagnosis and treatment.",
+        "contentCN":"我们的研究致力于构建一个全面的基准测试，以评估多模态大型语言模型（MLLMs）在乳腺癌任务中的表现。该基准测试旨在评估模型处理各种关键任务的能力，包括但不限于乳腺癌组织学亚型划分、乳腺癌组织学分级、坏死识别和钙化识别。通过建立这个基准测试，我们旨在为评估先进的多模态模型在乳腺癌诊断和治疗背景下如何解释病理图像和文本数据提供一个标准化的框架。 "
+    },
+    "project3":{
+        "title":"Scaling law for pathology",
+        "titleCN":"病理学的缩放定律",
+        "image":"",
+        "content":"The \"Scaling Law for Pathology\" project is aimed at exploring the efficacy of scaling laws within the specialized domain of pathology. This study seeks to empirically validate the hypothesis that increasing the volume of training data significantly enhances the performance capabilities of pathology-specific foundation models, particularly those that integrate visual and linguistic understanding. It employs a rigorous experimental design, utilizing state-of-the-art visual-language models that can process both medical images and associated textual information. Through systematic experimentation with progressively larger datasets, it analyzes changes on a variety of downstream tasks in model performance metrics, including precision, recall, F1 score, and area under the ROC curve (AUC-ROC). ",
+        "contentCN":"病理学的缩放定律项目旨在探索在专业领域病理学中缩放定律的效力。该研究旨在经验性地验证一个假设，即增加训练数据量显著提升了病理学特定基础模型的性能能力，特别是那些整合了视觉和语言理解的模型。该项目采用严格的实验设计，利用能够处理医学图像和相关文本信息的最先进的视觉-语言模型。通过系统地对逐渐扩大的数据集进行实验，分析模型性能指标在各种下游任务中的变化，包括精确度、召回率、F1分数和ROC曲线下的面积（AUC-ROC）。"
+    },
+    "project4":{
+        "title":"CLAM-based Image-Caption Generation",
+        "titleCN":"基于CLAM的图像描述生成",
+        "image":"",
+        "content":"Project Background: The high cost of annotation in the medical field has led to a lack of annotated data related to whole slide imaging (WSI), thereby limiting the performance of many downstream tasks, such as training and application of pathology CLIP.<br><br> Project Objective: Utilize the existing capabilities of CLAM to perform weakly supervised - few-shot annotations on WSI images. For all WSI tasks, given <10 WSI data with only WSI-level labels, provide patch-level labels for all such WSI task images. <br><br> Research Progress: The process of generating patch-level labels from WSI-level labels has been completed, with an overall progress of 70%.",
+        "contentCN":"项目背景：医疗的高标注成本导致了WSI相关标注数据的缺失，进而限制了许多下游任务的性能，比如病理CLIP的训练与应用。<br><br>项目目标：基于CLAM的现有能力对WSI图片进行弱监督-少样本的标注。在所有WSI任务上，给定<10张只有WSI级标签的WSI数据，能够给出所有此类WSI任务图片的patch级的标签。<br><br>研究进度：目前已完成从WSI级标签到patch级标签的生成过程，总体进度70%。"
+    },
+    "project5":{
+        "title":"KB-enhanced Pathology CLIP (public datasets)",
+        "titleCN":"基于知识库增强的病理学CLIP（公共数据集）",
+        "image":"",
+        "content":"KB-enhanced Pathology CLIP addresses the variability in performance of pathology foundation models across different branches of pathology. By leveraging expert-curated knowledge graphs, the project extracts concepts and their relationships, enriching the training datasets of pathology foundation models. Through manipulating the distribution of concepts in the data, the project aims to develop a model that excels in various pathological domains and subfields. The project utilizes public datasets and expert-curated knowledge graphs to extract important concepts and their relationships. These concepts are then applied into the training datasets, ensuring a balanced and comprehensive representation of various pathological domains. It employs advanced natural language processing (NLP) and computer vision techniques to align the extracted knowledge with the existing data, and fine-tunes the foundation model to optimize its performance across different pathological subfields.",
+        "contentCN":"KB-enhanced Pathology CLIP致力于解决病理学基础模型在不同病理学领域性能变化的问题。通过利用专家策划的知识图谱，该项目提取概念及其关系，丰富病理学基础模型的训练数据集。通过操纵数据中概念的分布，该项目旨在开发出在各种病理学领域和子领域中表现出色的模型。该项目利用公共数据集和专家策划的知识图谱提取重要概念及其关系。这些概念随后被应用于训练数据集，确保各种病理学领域得到平衡和全面的表征。项目采用先进的自然语言处理（NLP）和计算机视觉技术将提取的知识与现有数据进行对齐，并对基础模型进行微调，优化其在不同病理学子领域中的性能。"
+    },
+    "project6":{
+        "title":"pathological Image Filtering",
+        "titleCN":"病理图像过滤",
+        "image":"product_files/Non-pathological_Image_Filtering.png",
+        "content":"At present, a part of the publicly available pathological image pairs data sets such as Quilt are obtained from crawlers on social networks. However, there are some problems in Quilt dataset, such as non-pathological images mixed in pictures, non-pathological descriptions in text, and incorrect correspondence between pictures and text. These data have adverse effects on the training of multimodal models, which makes the performance of the models on downstream tasks worse. Data filtering can filter out data at a high noise level, and models trained on clean subsets will get better performance on downstream tasks.",
+        "contentCN":"目前，像Quilt这样的公开可获取的病理图像对数据集的一部分是通过社交网络上的爬虫获得的。然而，Quilt数据集存在一些问题，比如非病理图片的混入、文本中的非病理描述、以及图片与文本之间的不正确对应。这些数据对多模态模型的训练产生了不利影响，导致模型在下游任务上的性能下降。数据过滤能够筛选出高噪声水平的数据，而在清洁子集上训练的模型将在下游任务上获得更好的性能。"
+    },
+    "project7":{
+        "title":"Image-Caption Data Market Demo",
+        "titleCN":"图像描述数据市场演示",
+        "image":"product_files/Image_Caption_Data_Market_Demo.png",
+        "content":"Acquiring high-quality training data is critical for the development of highly accurate and robust machine learning models, particularly as foundational models emerge. <br><br>However, prior research on data marketplaces encounters two key challenges. Firstly, most marketplaces fail to allow buyers to demand the quality requirement from their purchased data. Consequently, buyers may be unable to utilize all purchased data due to the subpar quality of the purchase data. Secondly, the primary optimization objective of existing marketplaces is to maximize the utility of sellers without considering buyers' utility. Therefore, the price obtained by the existing biased objective is unfair, potentially resulting in a decrease in buyer purchases and the degradation of the trading volume in data markets.<br><br>To tackle these two challenges, we propose a novel, fair and quality-based data market \textbf{FQora}. Specifically, FQora utilizes two types of quality-based pricing functions and effective quality assessment functions to implement quality-constrained queries. Additionally, to ensure balanced utility allocation, we introduce mean variance constraint to maintain the low-risk development in the long term and address the fair market objective, maximizing utilities of both sellers and buyers with a novel Balanced Pareto Optimization. We theoretically show that Balanced Pareto Optimization can resolve multi-object optimization by utilizing a dual problem and ensuring convergence. Extensive experiments on four real-world datasets provide empirical support for our theoretical analysis and confirm the superior performance of our proposed FQora.",
+        "contentCN":"获取高质量的训练数据对于开发高度准确和稳健的机器学习模型至关重要，特别是在基础模型出现的情况下。<br><br>然而，关于数据市场的先前研究遇到了两个关键挑战。首先，大多数市场未能让买家要求其购买数据的质量要求。因此，由于购买数据的质量不佳，买家可能无法利用所有购买的数据。其次，现有市场的主要优化目标是最大化卖家的效用，而未考虑买家的效用。因此，现有偏见目标获得的价格是不公平的，可能导致买家购买减少，数据市场的交易量下降。<br><br>为解决这两个挑战，我们提出了一个新颖的、公平且基于质量的数据市场FQora。具体而言，FQora利用两种类型的基于质量的定价函数和有效的质量评估函数来实施质量约束查询。此外，为了确保平衡的效用分配，我们引入均值方差约束以保持长期低风险的发展，并解决公平市场目标，通过一种新颖的平衡帕累托优化来最大化卖家和买家的效用。我们在理论上展示了平衡帕累托优化可以通过利用对偶问题和确保收敛来解决多目标优化问题。对四个真实数据集的广泛实验为我们的理论分析提供了经验支持，并确认了我们提出的FQora的卓越性能。"
+    },
+    "project8":{
+        "title":"GraphRAG based Pathology LLM",
+        "titleCN":"基于GraphRAG的病理学大语言模型",
+        "image":"product_files/GraphRAG_based_Pathology_LLM.png",
+        "content":"The pathology large language model (LLM) is used to deeply mine and analyze private pathology data, and the rich information in the field of pathology is integrated by constructing refined pathology knowledge graph. Through the introduction of graph relationship analysis and GraphRAG methods, multi-dimensional analysis and reasoning of complex pathological data are realized, thus significantly improving the accuracy, professionalism and practicability of data query. This method can not only provide more accurate diagnostic AIDS, but also support knowledge discovery by medical researchers in large-scale data sets, and promote innovation and progress in pathology research.",
+        "contentCN":"基于GraphRAG的病理LLM：利用大型语言模型（LLM）对私有病理数据进行深度挖掘与分析，通过构建精细化的知识图谱，整合病理学领域内的丰富信息。通过引入图谱关系分析和GraphRAG方法，实现对复杂病理数据的多维度解析与推理，从而显著提升数据查询的准确性、专业性及实用性。该方法不仅能够提供更精准的诊断辅助，还能支持医学研究人员在大规模数据集中的知识发现，推动病理学研究的创新与进步。"
+    }
+}
