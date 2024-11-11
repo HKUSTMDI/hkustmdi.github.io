@@ -2,156 +2,156 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>实验室</title>
-    <link>//localhost:1313/zh-cn/</link>
+    <link>https://hkustmdi.github.io/zh-cn/</link>
     <description>Recent content on 实验室</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <atom:link href="//localhost:1313/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hkustmdi.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>病理知识图谱</title>
-      <link>//localhost:1313/zh-cn/dataset/dataset1/</link>
+      <link>https://hkustmdi.github.io/zh-cn/dataset/dataset1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/dataset/dataset1/</guid>
-      <description>&lt;!-- {{if .Params.image_url}} --&gt;&#xA;&lt;div class=&#34;image-container&#34; style=&#34;display: block;&#34;&gt;&#xA;    &lt;img src=&#34;//localhost:1313/Dataset_files/Pathology_Knowledge_Graph.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- {{end}} --&gt;&#xA;  &lt;!-- 首字母大写 --&gt;&#xA;  &lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;本&lt;/span&gt;&#xA;    项目构建了一个涵盖20种常见疾病的病理知识图谱，数据来源于中国国家卫生健康委员会（卫健委）发布的相关诊疗指南。我们通过使用graphRAG和大语言模型，对这些疾病的诊疗流程、症状表现、检查方法、治疗方案等进行结构化处理，对文本数据进行实体识别和关系抽取，自动化构建了知识图谱中的节点和边，完成了一个可供医学研究、临床决策支持和疾病管理系统使用的知识图谱，帮助研究者查询挖掘潜在的疾病关联、创新诊疗方法，通过结合大语言模型，为医生提供疾病诊断、治疗建议以及个性化医疗方案，提升诊疗效率和准确性。&#xA;      &lt;!-- &lt;span class=&#34;dropcap&#34;&gt;A&lt;/span&gt;&#xA;      t present, a part of the publicly available pathological image pairs data sets such as Quilt are obtained from crawlers on social networks. However, there are some problems in Quilt dataset, such as non-pathological images mixed in pictures, non-pathological descriptions in text, and incorrect correspondence between pictures and text. These data have adverse effects on the training of multimodal models, which makes the performance of the models on downstream tasks worse. Data filtering can filter out data at a high noise level, and models trained on clean subsets will get better performance on downstream tasks. --&gt;&#xA;  &lt;/div&gt;&#xA;&lt;!-- &lt;img class=&#34;col-img&#34; src=&#34;//localhost:1313/collaborate/liver_cancer.png&#34;&gt;&#xA;&lt;!-- &lt;div class=&#34;col-text&#34;&gt;The collaboration project between Wuhan Tongji Hospital and our laboratory began in July 2023. The collaboration focuses on exploring the recurrence patterns of liver cancer based on liver WSI slices. We utilized AI annotation tools to efficiently complete the identification and segmentation tasks of over 800 H&amp;amp;E and IHC slices, segmenting the most relevant liver cancer tumor regions on the WSI. Compared to traditional manual annotation methods, this approach saved 86% of the time.&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;col-text&#34;&gt;The segmented image data, used as a key data item in downstream recurrence pattern classification tasks, improved the AUC from 0.72 to 0.79.&lt;/div&gt; --&gt; &#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;//localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/dataset/dataset1/</guid>
+      <description>&lt;!-- {{if .Params.image_url}} --&gt;&#xA;&lt;div class=&#34;image-container&#34; style=&#34;display: block;&#34;&gt;&#xA;    &lt;img src=&#34;https://hkustmdi.github.io/Dataset_files/Pathology_Knowledge_Graph.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- {{end}} --&gt;&#xA;  &lt;!-- 首字母大写 --&gt;&#xA;  &lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;本&lt;/span&gt;&#xA;    项目构建了一个涵盖20种常见疾病的病理知识图谱，数据来源于中国国家卫生健康委员会（卫健委）发布的相关诊疗指南。我们通过使用graphRAG和大语言模型，对这些疾病的诊疗流程、症状表现、检查方法、治疗方案等进行结构化处理，对文本数据进行实体识别和关系抽取，自动化构建了知识图谱中的节点和边，完成了一个可供医学研究、临床决策支持和疾病管理系统使用的知识图谱，帮助研究者查询挖掘潜在的疾病关联、创新诊疗方法，通过结合大语言模型，为医生提供疾病诊断、治疗建议以及个性化医疗方案，提升诊疗效率和准确性。&#xA;      &lt;!-- &lt;span class=&#34;dropcap&#34;&gt;A&lt;/span&gt;&#xA;      t present, a part of the publicly available pathological image pairs data sets such as Quilt are obtained from crawlers on social networks. However, there are some problems in Quilt dataset, such as non-pathological images mixed in pictures, non-pathological descriptions in text, and incorrect correspondence between pictures and text. These data have adverse effects on the training of multimodal models, which makes the performance of the models on downstream tasks worse. Data filtering can filter out data at a high noise level, and models trained on clean subsets will get better performance on downstream tasks. --&gt;&#xA;  &lt;/div&gt;&#xA;&lt;!-- &lt;img class=&#34;col-img&#34; src=&#34;https://hkustmdi.github.io/collaborate/liver_cancer.png&#34;&gt;&#xA;&lt;!-- &lt;div class=&#34;col-text&#34;&gt;The collaboration project between Wuhan Tongji Hospital and our laboratory began in July 2023. The collaboration focuses on exploring the recurrence patterns of liver cancer based on liver WSI slices. We utilized AI annotation tools to efficiently complete the identification and segmentation tasks of over 800 H&amp;amp;E and IHC slices, segmenting the most relevant liver cancer tumor regions on the WSI. Compared to traditional manual annotation methods, this approach saved 86% of the time.&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;col-text&#34;&gt;The segmented image data, used as a key data item in downstream recurrence pattern classification tasks, improved the AUC from 0.72 to 0.79.&lt;/div&gt; --&gt; &#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;https://hkustmdi.github.io/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
     </item>
     <item>
       <title>非病理图像过滤</title>
-      <link>//localhost:1313/zh-cn/project/project1/</link>
+      <link>https://hkustmdi.github.io/zh-cn/project/project1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/project/project1/</guid>
-      <description>&lt;!-- 上述代码可以在html模版中用{{.Content使用}} --&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;//localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/project/project1/</guid>
+      <description>&lt;!-- 上述代码可以在html模版中用{{.Content使用}} --&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;https://hkustmdi.github.io/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/zh-cn/collaboration/lbp/</link>
+      <link>https://hkustmdi.github.io/zh-cn/collaboration/lbp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/collaboration/lbp/</guid>
-      <description>&lt;div class=&#34;col-text&#34;&gt;随着人工智能技术的发展，尤其是在医疗领域，机器学习和深度学习技术为病理学的诊断和研究提供了新的可能性。实验室与广州安必平医药科技股份有限公司（以下称“安必平”）的合作，旨在整合双方优势，聚焦病理诊断智能化发展领域，对多模态医疗数据的整合和增强、基于众包及知识图谱等的医疗影像数据标注及处理、及以数据为中心的可解释医疗人工智能等相关前沿课题进行深入合作，提升病理诊断服务及医疗数据价值，推动病理行业高质量发展。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;本合作项目于2023年5月正式启动。实验室对此的研究项目包括：医疗数据的众包标注，医疗AI任务的弱监督学习，医疗AI任务的可解释性研究等&lt;/div&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;//localhost:1313/collaborate/LBP_MDI_establish.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;目前我们已搭建可对免疫组化、免疫荧光等病理图片进行精准标注的自动标注平台，病理医生使用后反馈可节省50%的标注时间。我们还研发了具有病理知识的大语言模型，对给定病理图像展示出良好的判读能力，我们将持续优化现有的数据模型，力求达到病理科初级医生的阅片和诊断水平。同时，我们也对已存储的病理图片、病理文字描述等非结构化的病理数据进行数据挖掘，为病理科研提供坚实的数据基础。&lt;/div&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;//localhost:1313/collaborate/LBP_data_mining.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;病理是肿瘤诊断的“金标准”，癌症的防与控均离不开病理诊断，随着病理诊断向数字化和智能化转型，病理数据的标准化与高效标注成为了转型过程中的“卡脖子”技术。安必平是国内病理诊断领域首家上市企业，专门从事病理诊断相关技术产品研发，旗下的宫颈液基细胞学图像辅助诊断软件（LBP-PIAS）已在医学图像分析、临床辅助诊断等方面实现技术突破。在这一背景下，实验室负责人陈雷教授指出，当前的机器学习领域，模型和硬件资源是相对充足的，而高质量的数据资源却异常稀缺。他期望，通过与安必平的合作，实现“以模型为中心”到“以数据为中心”的转变。将复杂医学任务拆解成初级医学工作者可以胜任的简单任务，降低数据的获取成本；利用大量自动标注的简单任务数据提高AI诊断准确率，充分挖掘病理数据的潜在价值；通过量化医学指标、抽取诊断规则，提供数据为基础的可解释性，解决病理诊断智能化过程中的痛点，为我国甚至全世界病理诊断智能化，通过医学精准诊断造福社会而贡献力量。&lt;/div&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/collaboration/lbp/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;随着人工智能技术的发展，尤其是在医疗领域，机器学习和深度学习技术为病理学的诊断和研究提供了新的可能性。实验室与广州安必平医药科技股份有限公司（以下称“安必平”）的合作，旨在整合双方优势，聚焦病理诊断智能化发展领域，对多模态医疗数据的整合和增强、基于众包及知识图谱等的医疗影像数据标注及处理、及以数据为中心的可解释医疗人工智能等相关前沿课题进行深入合作，提升病理诊断服务及医疗数据价值，推动病理行业高质量发展。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;本合作项目于2023年5月正式启动。实验室对此的研究项目包括：医疗数据的众包标注，医疗AI任务的弱监督学习，医疗AI任务的可解释性研究等&lt;/div&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;https://hkustmdi.github.io/collaborate/LBP_MDI_establish.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;目前我们已搭建可对免疫组化、免疫荧光等病理图片进行精准标注的自动标注平台，病理医生使用后反馈可节省50%的标注时间。我们还研发了具有病理知识的大语言模型，对给定病理图像展示出良好的判读能力，我们将持续优化现有的数据模型，力求达到病理科初级医生的阅片和诊断水平。同时，我们也对已存储的病理图片、病理文字描述等非结构化的病理数据进行数据挖掘，为病理科研提供坚实的数据基础。&lt;/div&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;https://hkustmdi.github.io/collaborate/LBP_data_mining.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;病理是肿瘤诊断的“金标准”，癌症的防与控均离不开病理诊断，随着病理诊断向数字化和智能化转型，病理数据的标准化与高效标注成为了转型过程中的“卡脖子”技术。安必平是国内病理诊断领域首家上市企业，专门从事病理诊断相关技术产品研发，旗下的宫颈液基细胞学图像辅助诊断软件（LBP-PIAS）已在医学图像分析、临床辅助诊断等方面实现技术突破。在这一背景下，实验室负责人陈雷教授指出，当前的机器学习领域，模型和硬件资源是相对充足的，而高质量的数据资源却异常稀缺。他期望，通过与安必平的合作，实现“以模型为中心”到“以数据为中心”的转变。将复杂医学任务拆解成初级医学工作者可以胜任的简单任务，降低数据的获取成本；利用大量自动标注的简单任务数据提高AI诊断准确率，充分挖掘病理数据的潜在价值；通过量化医学指标、抽取诊断规则，提供数据为基础的可解释性，解决病理诊断智能化过程中的痛点，为我国甚至全世界病理诊断智能化，通过医学精准诊断造福社会而贡献力量。&lt;/div&gt;</description>
     </item>
     <item>
       <title>乳腺癌中的多模态大模型评估</title>
-      <link>//localhost:1313/zh-cn/project/project2/</link>
+      <link>https://hkustmdi.github.io/zh-cn/project/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/project/project2/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/project/project2/</guid>
       <description></description>
     </item>
     <item>
       <title>已清理的病理图像-描述数据集（公共）</title>
-      <link>//localhost:1313/zh-cn/dataset/dataset2/</link>
+      <link>https://hkustmdi.github.io/zh-cn/dataset/dataset2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/dataset/dataset2/</guid>
-      <description>&lt;!-- &lt;div class=&#34;image-container&#34; style=&#34;display: block;&#34;&gt;&#xA;    &lt;img src=&#34;//localhost:1313/Dataset_files/Pathology_Knowledge_Graph.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;/div&gt; --&gt;&#xA;&lt;!-- {{end}} --&gt;&#xA;  &lt;!-- 首字母大写 --&gt;&#xA;  &lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;从&lt;/span&gt;&#xA;    公开渠道收集和整理的病理图文数据集，主要包括从社交平台、论坛、医学论文、病理教学视频和教材等来源获得的病理图像和它们所对应的文本注释。这些图像-文本配对经过基本清洗和治理，其中非病理领域的描述和可读性低的文本注释已被去除。数据集中包含有价值的病理多模态知识和对应关系。&#xA;  &lt;/div&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/dataset/dataset2/</guid>
+      <description>&lt;!-- &lt;div class=&#34;image-container&#34; style=&#34;display: block;&#34;&gt;&#xA;    &lt;img src=&#34;https://hkustmdi.github.io/Dataset_files/Pathology_Knowledge_Graph.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;/div&gt; --&gt;&#xA;&lt;!-- {{end}} --&gt;&#xA;  &lt;!-- 首字母大写 --&gt;&#xA;  &lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;从&lt;/span&gt;&#xA;    公开渠道收集和整理的病理图文数据集，主要包括从社交平台、论坛、医学论文、病理教学视频和教材等来源获得的病理图像和它们所对应的文本注释。这些图像-文本配对经过基本清洗和治理，其中非病理领域的描述和可读性低的文本注释已被去除。数据集中包含有价值的病理多模态知识和对应关系。&#xA;  &lt;/div&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/zh-cn/collaboration/xh/</link>
+      <link>https://hkustmdi.github.io/zh-cn/collaboration/xh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/collaboration/xh/</guid>
-      <description>&lt;div class=&#34;col-text&#34;&gt;与北京协和医学院、深圳妇幼保健院进行合作，结合病理切片和p16染色结果，利用深度学习算法对宫颈组织病理学样本进行二分类（LSIL-和HSIL+），开发一款高效、准确、可靠的宫颈癌组学病理图像人工智能诊断系统，以提高宫颈癌早期诊断准确率、缩短病理诊断的时间和流程，降低病人治疗和诊断成本，改善公共卫生和医疗健康服务的水平。&lt;/div&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;//localhost:1313/collaborate/xh_1.png&#34;&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;//localhost:1313/collaborate/xh_2.png&#34;&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/collaboration/xh/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;与北京协和医学院、深圳妇幼保健院进行合作，结合病理切片和p16染色结果，利用深度学习算法对宫颈组织病理学样本进行二分类（LSIL-和HSIL+），开发一款高效、准确、可靠的宫颈癌组学病理图像人工智能诊断系统，以提高宫颈癌早期诊断准确率、缩短病理诊断的时间和流程，降低病人治疗和诊断成本，改善公共卫生和医疗健康服务的水平。&lt;/div&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;https://hkustmdi.github.io/collaborate/xh_1.png&#34;&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;https://hkustmdi.github.io/collaborate/xh_2.png&#34;&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/zh-cn/collaboration/xh_col/</link>
+      <link>https://hkustmdi.github.io/zh-cn/collaboration/xh_col/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/collaboration/xh_col/</guid>
-      <description>&lt;img class=&#34;col-img&#34; src=&#34;//localhost:1313/collaborate/xh_col.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;阴道镜是一种用于筛查和诊断女性宫颈、阴道等部位异常的检查技术,解读阴道镜检查报告中通常包含专业术语和复杂的医学数据，普通患者难以理解，而医生也面临着提高诊断和沟通效率的需求。我们与北京协和医学院、深圳妇幼保健院进行合作，旨在解决这一痛点，通过智能化的解读系统，使患者能够轻松理解自己的报告，加深对自身健康状况的认知。同时为医生提供技术支持和基于报告的个性化诊断建议，提高诊断的准确性和服务质量，提升医患之间的沟通效率。&lt;/div&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/collaboration/xh_col/</guid>
+      <description>&lt;img class=&#34;col-img&#34; src=&#34;https://hkustmdi.github.io/collaborate/xh_col.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;阴道镜是一种用于筛查和诊断女性宫颈、阴道等部位异常的检查技术,解读阴道镜检查报告中通常包含专业术语和复杂的医学数据，普通患者难以理解，而医生也面临着提高诊断和沟通效率的需求。我们与北京协和医学院、深圳妇幼保健院进行合作，旨在解决这一痛点，通过智能化的解读系统，使患者能够轻松理解自己的报告，加深对自身健康状况的认知。同时为医生提供技术支持和基于报告的个性化诊断建议，提高诊断的准确性和服务质量，提升医患之间的沟通效率。&lt;/div&gt;</description>
     </item>
     <item>
       <title>病理学的缩放定律</title>
-      <link>//localhost:1313/zh-cn/project/project3/</link>
+      <link>https://hkustmdi.github.io/zh-cn/project/project3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/project/project3/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/project/project3/</guid>
       <description></description>
     </item>
     <item>
       <title>已清理的病理图像-描述数据集（全部）</title>
-      <link>//localhost:1313/zh-cn/dataset/dataset3/</link>
+      <link>https://hkustmdi.github.io/zh-cn/dataset/dataset3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/dataset/dataset3/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/dataset/dataset3/</guid>
       <description>&lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;从&lt;/span&gt;&#xA;    公开渠道和非公开渠道收集和整理的病理图文数据集，主要包括从社交平台、论坛、医学论文、病理教学视频和教材等开放来源获得的病理图像和它们所对应的文本注释，以及从专业性更强的合作单位、医院等非开放来源获得的病理报告、教学笔记等。这些图像-文本配对经过基本清洗和治理，其中非病理领域的描述和可读性低的文本注释已被去除。数据集中包含更加准确的的病理多模态知识和对应关系。&#xA;  &lt;/div&gt;</description>
     </item>
     <item>
       <title>基于CLAM的图像描述生成</title>
-      <link>//localhost:1313/zh-cn/project/project4/</link>
+      <link>https://hkustmdi.github.io/zh-cn/project/project4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/project/project4/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/project/project4/</guid>
       <description></description>
     </item>
     <item>
       <title>乳腺癌基准测试</title>
-      <link>//localhost:1313/zh-cn/dataset/dataset4/</link>
+      <link>https://hkustmdi.github.io/zh-cn/dataset/dataset4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/dataset/dataset4/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/dataset/dataset4/</guid>
       <description>&lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;我&lt;/span&gt;&#xA;    们开发了一个乳腺癌基准测试，用于评估人工智能模型在病理图像分析方面的性能。我们从合作医院获取了10个全视野切片图像（WSI），由专业病理医生对坏死、神经受侵、钙化、脉管瘤栓、导管原位癌（DCIS）和浸润性导管癌（IDC）等六个乳腺癌特征区域进行了精确标注，最终获得了约1000张高质量的图像数据。利用这些数据，我们对多模态大型语言模型（MLLM）和CLIP类模型在上述六个乳腺癌诊断任务上进行了评测。CLIP模型的测试使用预定义的模板和近义词表，基于输入图像与预设文本的相似度得分进行评估；MLLM模型的测试则结合了模板和提示，引导模型在回答病理相关问题时以“是”或“否”作出回应。通过这个乳腺癌基准测试，我们旨在评估人工智能模型在病理图像分析中的性能，为研究者提供一个统一的平台，促进人工智能在乳腺癌诊断领域的发展。&#xA;  &lt;/div&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/zh-cn/collaboration/tj/</link>
+      <link>https://hkustmdi.github.io/zh-cn/collaboration/tj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/collaboration/tj/</guid>
-      <description>&lt;img class=&#34;col-img&#34; src=&#34;//localhost:1313/collaborate/liver_cancer.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;武汉同济医院和我们实验室的合作项目开始于2023年7月。合作内容是基于肝脏WSI切片探索肝癌复发模式。我们利用AI标注工具，高效完成800余张H&amp;amp;E、IHC切片的识别与分割任务，分割出WSI上复发模式最相关的肝癌肿瘤区域，相比于传统的手动标注方式，节省了86%的时间。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;分割后的图像数据在下游复发模式的分类任务作为关键数据项，将AUC从0.72提升到了0.79.&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;//localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/collaboration/tj/</guid>
+      <description>&lt;img class=&#34;col-img&#34; src=&#34;https://hkustmdi.github.io/collaborate/liver_cancer.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;武汉同济医院和我们实验室的合作项目开始于2023年7月。合作内容是基于肝脏WSI切片探索肝癌复发模式。我们利用AI标注工具，高效完成800余张H&amp;amp;E、IHC切片的识别与分割任务，分割出WSI上复发模式最相关的肝癌肿瘤区域，相比于传统的手动标注方式，节省了86%的时间。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;分割后的图像数据在下游复发模式的分类任务作为关键数据项，将AUC从0.72提升到了0.79.&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;https://hkustmdi.github.io/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
     </item>
     <item>
       <title>基于知识库增强的病理学CLIP（公共数据集）</title>
-      <link>//localhost:1313/zh-cn/project/project5/</link>
+      <link>https://hkustmdi.github.io/zh-cn/project/project5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/project/project5/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/project/project5/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/zh-cn/collaboration/ger/</link>
+      <link>https://hkustmdi.github.io/zh-cn/collaboration/ger/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/collaboration/ger/</guid>
-      <description>&lt;div class=&#34;col-text&#34;&gt;本项目旨在开发并验证一种基于多模态AI模型的预测系统，该系统专注于评估不同药物治疗胃食管反流（GER）症状的疗效。GER症状源于胃及十二指肠内容物异常反流至食管，引发一系列食管内外症状或并发症。罗马IV标准将GER症状患者细分为GERD（包括食管炎和非糜烂性反流病NERD）及功能性食管病（如反流性高敏感RH和功能性烧心FH）。鉴于不同亚型间病理机制差异显著，当前治疗方法如质子泵抑制剂（PPI）虽为首选，但高达半数患者反应不佳。本项目通过整合患者临床信息、胃镜图像、高分辨率食管测压及动态pH-阻抗监测等多维度数据，构建AI模型，以期精准预测各治疗方案对GER症状的疗效，为临床医生提供个性化用药指导。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;//localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/collaboration/ger/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;本项目旨在开发并验证一种基于多模态AI模型的预测系统，该系统专注于评估不同药物治疗胃食管反流（GER）症状的疗效。GER症状源于胃及十二指肠内容物异常反流至食管，引发一系列食管内外症状或并发症。罗马IV标准将GER症状患者细分为GERD（包括食管炎和非糜烂性反流病NERD）及功能性食管病（如反流性高敏感RH和功能性烧心FH）。鉴于不同亚型间病理机制差异显著，当前治疗方法如质子泵抑制剂（PPI）虽为首选，但高达半数患者反应不佳。本项目通过整合患者临床信息、胃镜图像、高分辨率食管测压及动态pH-阻抗监测等多维度数据，构建AI模型，以期精准预测各治疗方案对GER症状的疗效，为临床医生提供个性化用药指导。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;https://hkustmdi.github.io/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
     </item>
     <item>
       <title>病理图像过滤</title>
-      <link>//localhost:1313/zh-cn/project/project6/</link>
+      <link>https://hkustmdi.github.io/zh-cn/project/project6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/project/project6/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/project/project6/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/zh-cn/collaboration/hb4_1/</link>
+      <link>https://hkustmdi.github.io/zh-cn/collaboration/hb4_1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/collaboration/hb4_1/</guid>
-      <description>&lt;div class=&#34;col-text&#34;&gt;河北医科大学第四医院与香港科技大学（广州）医疗数据联合智能实验中心于2024.9正式启动了基于HE切片预测PIK3CA基因突变状态与新辅助治疗疗效的联合研究项目。该项目旨在应对精准医疗领域的共同挑战，尤其是在乳腺癌患者的治疗中，如何通过高效、准确的基因突变预测提升新辅助治疗的疗效。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;在该项目中，双方合作采用了最前沿的人工智能和深度学习算法，结合大规模的病理HE切片数据，开发精准预测PIK3CA突变状态的智能模型。通过将病理图像与基因突变分析相结合，我们希望实现高效、非侵入性的突变状态预测，从而为乳腺癌患者提供更具个性化和优化的治疗方案。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;截至目前，合作取得了重要进展，初步成果包括建立了高质量的病理图像数据库和早期的算法模型验证。未来，双方将进一步优化模型，推进其临床应用，预计该技术将在乳腺癌新辅助治疗的疗效预测中展现出巨大的潜力。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;该合作为双方带来了显著的益处：河北医科大学第四医院通过该项目进一步加强了在医学数据分析和精准医疗领域的科研能力，推动了院内的创新发展；而香港科技大学（广州）则通过与医疗机构的深度合作，将最新的智能算法技术直接应用于临床实践，进一步推动了医学智能化的应用落地。双方通过此次合作，不仅加强了学术界和临床实践之间的桥梁，也为未来在精准医疗领域的创新提供了广泛的可能性。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;//localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/collaboration/hb4_1/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;河北医科大学第四医院与香港科技大学（广州）医疗数据联合智能实验中心于2024.9正式启动了基于HE切片预测PIK3CA基因突变状态与新辅助治疗疗效的联合研究项目。该项目旨在应对精准医疗领域的共同挑战，尤其是在乳腺癌患者的治疗中，如何通过高效、准确的基因突变预测提升新辅助治疗的疗效。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;在该项目中，双方合作采用了最前沿的人工智能和深度学习算法，结合大规模的病理HE切片数据，开发精准预测PIK3CA突变状态的智能模型。通过将病理图像与基因突变分析相结合，我们希望实现高效、非侵入性的突变状态预测，从而为乳腺癌患者提供更具个性化和优化的治疗方案。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;截至目前，合作取得了重要进展，初步成果包括建立了高质量的病理图像数据库和早期的算法模型验证。未来，双方将进一步优化模型，推进其临床应用，预计该技术将在乳腺癌新辅助治疗的疗效预测中展现出巨大的潜力。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;该合作为双方带来了显著的益处：河北医科大学第四医院通过该项目进一步加强了在医学数据分析和精准医疗领域的科研能力，推动了院内的创新发展；而香港科技大学（广州）则通过与医疗机构的深度合作，将最新的智能算法技术直接应用于临床实践，进一步推动了医学智能化的应用落地。双方通过此次合作，不仅加强了学术界和临床实践之间的桥梁，也为未来在精准医疗领域的创新提供了广泛的可能性。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;https://hkustmdi.github.io/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
     </item>
     <item>
       <title>图像描述数据市场演示</title>
-      <link>//localhost:1313/zh-cn/project/project7/</link>
+      <link>https://hkustmdi.github.io/zh-cn/project/project7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/project/project7/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/project/project7/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/zh-cn/collaboration/hb4_2/</link>
+      <link>https://hkustmdi.github.io/zh-cn/collaboration/hb4_2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/collaboration/hb4_2/</guid>
-      <description>&lt;div class=&#34;col-text&#34;&gt;河北医科大学第四医院与香港科技大学（广州）医疗数据联合智能实验中心于2024.9正式启动了基于HE图像及HER2免疫组化图像建立多模态深度学习模型预测转移性乳腺癌预后的联合研究项目。该项目通过多模态数据的整合和深度学习技术的应用，提供了更加精确和高效的乳腺癌预后预测方法，具备显著的临床应用价值，同时推动了人工智能与医学的深入结合。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;乳腺癌是全球女性最常见的恶性肿瘤之一，HER2是乳腺癌原发和转移的一个重要的预后和预测指标。最近，新型的抗体药物偶联物（Antibody-drug conjugates, ADCs）在晚期HER2低表达（HER2-low）乳腺癌患者中展现出了显著的治疗效果，从而扩展了之前仅针对HER2阳性患者的治疗方案。然而乳腺癌的HER2表达具有时空异质性，在用新型ADCs药物治疗转移性乳腺癌患者时，原发灶与转移灶的HER2表达不一致影响了其疗效及患者预后。对这类患者进行精确的预后预测对于个体化治疗至关重要。传统的预后预测依赖于临床病理特征，但这些方法在准确性和灵活性上存在局限。该合作实验室采用了多模态深度学习方法，结合HE图像和HER2免疫组化图像的信息，以提高预测转移性乳腺癌预后的准确性。多模态深度学习模型的核心优势在于能够整合不同类型的数据，自动学习并提取各模态中的关键特征，从而生成更具临床意义的预测。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;该项目不仅解决了乳腺癌预后预测领域中的关键挑战，还通过多模态数据整合和深度学习技术，推动了智能医疗的发展。对双方而言，这次合作将带来诊断效率和科研影响力的双重提升，未来有望在更多领域取得突破，推动医学和人工智能技术的共同进步。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;//localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/collaboration/hb4_2/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;河北医科大学第四医院与香港科技大学（广州）医疗数据联合智能实验中心于2024.9正式启动了基于HE图像及HER2免疫组化图像建立多模态深度学习模型预测转移性乳腺癌预后的联合研究项目。该项目通过多模态数据的整合和深度学习技术的应用，提供了更加精确和高效的乳腺癌预后预测方法，具备显著的临床应用价值，同时推动了人工智能与医学的深入结合。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;乳腺癌是全球女性最常见的恶性肿瘤之一，HER2是乳腺癌原发和转移的一个重要的预后和预测指标。最近，新型的抗体药物偶联物（Antibody-drug conjugates, ADCs）在晚期HER2低表达（HER2-low）乳腺癌患者中展现出了显著的治疗效果，从而扩展了之前仅针对HER2阳性患者的治疗方案。然而乳腺癌的HER2表达具有时空异质性，在用新型ADCs药物治疗转移性乳腺癌患者时，原发灶与转移灶的HER2表达不一致影响了其疗效及患者预后。对这类患者进行精确的预后预测对于个体化治疗至关重要。传统的预后预测依赖于临床病理特征，但这些方法在准确性和灵活性上存在局限。该合作实验室采用了多模态深度学习方法，结合HE图像和HER2免疫组化图像的信息，以提高预测转移性乳腺癌预后的准确性。多模态深度学习模型的核心优势在于能够整合不同类型的数据，自动学习并提取各模态中的关键特征，从而生成更具临床意义的预测。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;该项目不仅解决了乳腺癌预后预测领域中的关键挑战，还通过多模态数据整合和深度学习技术，推动了智能医疗的发展。对双方而言，这次合作将带来诊断效率和科研影响力的双重提升，未来有望在更多领域取得突破，推动医学和人工智能技术的共同进步。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;https://hkustmdi.github.io/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/zh-cn/collaboration/hb4_3/</link>
+      <link>https://hkustmdi.github.io/zh-cn/collaboration/hb4_3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/collaboration/hb4_3/</guid>
-      <description>&lt;div class=&#34;col-text&#34;&gt;我们与河北医科大学第四医院进行合作，研究乳腺癌在人工智能领域的应用。我们共同合作乳腺癌WSI标注、乳腺癌基准测试构建、乳腺癌多模态大模型构建等。我们与河北医科大学第四医院建立了深入的合作关系，共同致力于乳腺癌在人工智能领域的应用研究。合作内容涵盖了乳腺癌全视野切片图像（WSI）的标注、乳腺癌基准测试的构建以及乳腺癌多模态大型模型的开发等方面。在合作过程中，双方团队进行了密切的交流与协作，特别是在已初步构建完成的乳腺癌基准测试项目上。我们就乳腺癌的研究方向进行了深入探讨，对数据标注方式展开了详细讨论，并对评估方法进行了充分论证。这些努力确保了基准测试的准确性和可靠性。通过与河北医科大学第四医院的紧密合作，我们充分发挥了各自领域的优势，加速了乳腺癌研究的进展。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;//localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+      <guid>https://hkustmdi.github.io/zh-cn/collaboration/hb4_3/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;我们与河北医科大学第四医院进行合作，研究乳腺癌在人工智能领域的应用。我们共同合作乳腺癌WSI标注、乳腺癌基准测试构建、乳腺癌多模态大模型构建等。我们与河北医科大学第四医院建立了深入的合作关系，共同致力于乳腺癌在人工智能领域的应用研究。合作内容涵盖了乳腺癌全视野切片图像（WSI）的标注、乳腺癌基准测试的构建以及乳腺癌多模态大型模型的开发等方面。在合作过程中，双方团队进行了密切的交流与协作，特别是在已初步构建完成的乳腺癌基准测试项目上。我们就乳腺癌的研究方向进行了深入探讨，对数据标注方式展开了详细讨论，并对评估方法进行了充分论证。这些努力确保了基准测试的准确性和可靠性。通过与河北医科大学第四医院的紧密合作，我们充分发挥了各自领域的优势，加速了乳腺癌研究的进展。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;https://hkustmdi.github.io/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
     </item>
     <item>
       <title>基于GraphRAG的病理学大语言模型</title>
-      <link>//localhost:1313/zh-cn/project/project8/</link>
+      <link>https://hkustmdi.github.io/zh-cn/project/project8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/project/project8/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/project/project8/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/zh-cn/people/</link>
+      <link>https://hkustmdi.github.io/zh-cn/people/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/zh-cn/people/</guid>
+      <guid>https://hkustmdi.github.io/zh-cn/people/</guid>
       <description></description>
     </item>
   </channel>

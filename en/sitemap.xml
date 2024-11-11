@@ -2,328 +2,328 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/en/dataset/dataset1/</loc>
+    <loc>https://hkustmdi.github.io/en/dataset/dataset1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/dataset/dataset1/"
+                href="https://hkustmdi.github.io/zh-cn/dataset/dataset1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/dataset/dataset1/"
+                href="https://hkustmdi.github.io/en/dataset/dataset1/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/project/project1/</loc>
+    <loc>https://hkustmdi.github.io/en/project/project1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/project/project1/"
+                href="https://hkustmdi.github.io/zh-cn/project/project1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/project/project1/"
+                href="https://hkustmdi.github.io/en/project/project1/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/collaboration/lbp/</loc>
+    <loc>https://hkustmdi.github.io/en/collaboration/lbp/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/collaboration/lbp/"
+                href="https://hkustmdi.github.io/zh-cn/collaboration/lbp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/collaboration/lbp/"
+                href="https://hkustmdi.github.io/en/collaboration/lbp/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/dataset/dataset2/</loc>
+    <loc>https://hkustmdi.github.io/en/dataset/dataset2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/dataset/dataset2/"
+                href="https://hkustmdi.github.io/zh-cn/dataset/dataset2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/dataset/dataset2/"
+                href="https://hkustmdi.github.io/en/dataset/dataset2/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/project/project2/</loc>
+    <loc>https://hkustmdi.github.io/en/project/project2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/project/project2/"
+                href="https://hkustmdi.github.io/zh-cn/project/project2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/project/project2/"
+                href="https://hkustmdi.github.io/en/project/project2/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/collaboration/xh/</loc>
+    <loc>https://hkustmdi.github.io/en/collaboration/xh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/collaboration/xh/"
+                href="https://hkustmdi.github.io/zh-cn/collaboration/xh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/collaboration/xh/"
+                href="https://hkustmdi.github.io/en/collaboration/xh/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/collaboration/xh_col/</loc>
+    <loc>https://hkustmdi.github.io/en/collaboration/xh_col/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/collaboration/xh_col/"
+                href="https://hkustmdi.github.io/zh-cn/collaboration/xh_col/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/collaboration/xh_col/"
+                href="https://hkustmdi.github.io/en/collaboration/xh_col/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/dataset/dataset3/</loc>
+    <loc>https://hkustmdi.github.io/en/dataset/dataset3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/dataset/dataset3/"
+                href="https://hkustmdi.github.io/zh-cn/dataset/dataset3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/dataset/dataset3/"
+                href="https://hkustmdi.github.io/en/dataset/dataset3/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/project/project3/</loc>
+    <loc>https://hkustmdi.github.io/en/project/project3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/project/project3/"
+                href="https://hkustmdi.github.io/zh-cn/project/project3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/project/project3/"
+                href="https://hkustmdi.github.io/en/project/project3/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/dataset/dataset4/</loc>
+    <loc>https://hkustmdi.github.io/en/dataset/dataset4/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/dataset/dataset4/"
+                href="https://hkustmdi.github.io/zh-cn/dataset/dataset4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/dataset/dataset4/"
+                href="https://hkustmdi.github.io/en/dataset/dataset4/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/project/project4/</loc>
+    <loc>https://hkustmdi.github.io/en/project/project4/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/project/project4/"
+                href="https://hkustmdi.github.io/zh-cn/project/project4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/project/project4/"
+                href="https://hkustmdi.github.io/en/project/project4/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/collaboration/tj/</loc>
+    <loc>https://hkustmdi.github.io/en/collaboration/tj/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/collaboration/tj/"
+                href="https://hkustmdi.github.io/zh-cn/collaboration/tj/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/collaboration/tj/"
+                href="https://hkustmdi.github.io/en/collaboration/tj/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/project/project5/</loc>
+    <loc>https://hkustmdi.github.io/en/project/project5/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/project/project5/"
+                href="https://hkustmdi.github.io/zh-cn/project/project5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/project/project5/"
+                href="https://hkustmdi.github.io/en/project/project5/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/collaboration/ger/</loc>
+    <loc>https://hkustmdi.github.io/en/collaboration/ger/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/collaboration/ger/"
+                href="https://hkustmdi.github.io/zh-cn/collaboration/ger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/collaboration/ger/"
+                href="https://hkustmdi.github.io/en/collaboration/ger/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/project/project6/</loc>
+    <loc>https://hkustmdi.github.io/en/project/project6/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/project/project6/"
+                href="https://hkustmdi.github.io/zh-cn/project/project6/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/project/project6/"
+                href="https://hkustmdi.github.io/en/project/project6/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/collaboration/hb4_1/</loc>
+    <loc>https://hkustmdi.github.io/en/collaboration/hb4_1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/collaboration/hb4_1/"
+                href="https://hkustmdi.github.io/zh-cn/collaboration/hb4_1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/collaboration/hb4_1/"
+                href="https://hkustmdi.github.io/en/collaboration/hb4_1/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/project/project7/</loc>
+    <loc>https://hkustmdi.github.io/en/project/project7/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/project/project7/"
+                href="https://hkustmdi.github.io/zh-cn/project/project7/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/project/project7/"
+                href="https://hkustmdi.github.io/en/project/project7/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/collaboration/hb4_2/</loc>
+    <loc>https://hkustmdi.github.io/en/collaboration/hb4_2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/collaboration/hb4_2/"
+                href="https://hkustmdi.github.io/zh-cn/collaboration/hb4_2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/collaboration/hb4_2/"
+                href="https://hkustmdi.github.io/en/collaboration/hb4_2/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/collaboration/hb4_3/</loc>
+    <loc>https://hkustmdi.github.io/en/collaboration/hb4_3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/collaboration/hb4_3/"
+                href="https://hkustmdi.github.io/zh-cn/collaboration/hb4_3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/collaboration/hb4_3/"
+                href="https://hkustmdi.github.io/en/collaboration/hb4_3/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/project/project8/</loc>
+    <loc>https://hkustmdi.github.io/en/project/project8/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/project/project8/"
+                href="https://hkustmdi.github.io/zh-cn/project/project8/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/project/project8/"
+                href="https://hkustmdi.github.io/en/project/project8/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/</loc>
+    <loc>https://hkustmdi.github.io/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/"
+                href="https://hkustmdi.github.io/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/"
+                href="https://hkustmdi.github.io/en/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/collaboration/</loc>
+    <loc>https://hkustmdi.github.io/en/collaboration/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/collaboration/"
+                href="https://hkustmdi.github.io/zh-cn/collaboration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/collaboration/"
+                href="https://hkustmdi.github.io/en/collaboration/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/dataset/</loc>
+    <loc>https://hkustmdi.github.io/en/dataset/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/dataset/"
+                href="https://hkustmdi.github.io/zh-cn/dataset/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/dataset/"
+                href="https://hkustmdi.github.io/en/dataset/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/people/</loc>
+    <loc>https://hkustmdi.github.io/en/people/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/people/"
+                href="https://hkustmdi.github.io/zh-cn/people/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/people/"
+                href="https://hkustmdi.github.io/en/people/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/project/</loc>
+    <loc>https://hkustmdi.github.io/en/project/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/project/"
+                href="https://hkustmdi.github.io/zh-cn/project/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/project/"
+                href="https://hkustmdi.github.io/en/project/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/categories/</loc>
+    <loc>https://hkustmdi.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/categories/"
+                href="https://hkustmdi.github.io/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/categories/"
+                href="https://hkustmdi.github.io/en/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/en/tags/</loc>
+    <loc>https://hkustmdi.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="//localhost:1313/zh-cn/tags/"
+                href="https://hkustmdi.github.io/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="//localhost:1313/en/tags/"
+                href="https://hkustmdi.github.io/en/tags/"
                 />
   </url>
 </urlset>
