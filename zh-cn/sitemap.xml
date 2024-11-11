@@ -2,328 +2,328 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/zh-cn/dataset/dataset1/</loc>
+    <loc>//localhost:1313/zh-cn/dataset/dataset1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/dataset/dataset1/"
+                href="//localhost:1313/en/dataset/dataset1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/dataset/dataset1/"
+                href="//localhost:1313/zh-cn/dataset/dataset1/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/project/project1/</loc>
+    <loc>//localhost:1313/zh-cn/project/project1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/project/project1/"
+                href="//localhost:1313/en/project/project1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/project/project1/"
+                href="//localhost:1313/zh-cn/project/project1/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/collaboration/lbp/</loc>
+    <loc>//localhost:1313/zh-cn/collaboration/lbp/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/collaboration/lbp/"
+                href="//localhost:1313/en/collaboration/lbp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/collaboration/lbp/"
+                href="//localhost:1313/zh-cn/collaboration/lbp/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/project/project2/</loc>
+    <loc>//localhost:1313/zh-cn/project/project2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/project/project2/"
+                href="//localhost:1313/en/project/project2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/project/project2/"
+                href="//localhost:1313/zh-cn/project/project2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/dataset/dataset2/</loc>
+    <loc>//localhost:1313/zh-cn/dataset/dataset2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/dataset/dataset2/"
+                href="//localhost:1313/en/dataset/dataset2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/dataset/dataset2/"
+                href="//localhost:1313/zh-cn/dataset/dataset2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/collaboration/xh/</loc>
+    <loc>//localhost:1313/zh-cn/collaboration/xh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/collaboration/xh/"
+                href="//localhost:1313/en/collaboration/xh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/collaboration/xh/"
+                href="//localhost:1313/zh-cn/collaboration/xh/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/collaboration/xh_col/</loc>
+    <loc>//localhost:1313/zh-cn/collaboration/xh_col/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/collaboration/xh_col/"
+                href="//localhost:1313/en/collaboration/xh_col/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/collaboration/xh_col/"
+                href="//localhost:1313/zh-cn/collaboration/xh_col/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/project/project3/</loc>
+    <loc>//localhost:1313/zh-cn/project/project3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/project/project3/"
+                href="//localhost:1313/en/project/project3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/project/project3/"
+                href="//localhost:1313/zh-cn/project/project3/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/dataset/dataset3/</loc>
+    <loc>//localhost:1313/zh-cn/dataset/dataset3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/dataset/dataset3/"
+                href="//localhost:1313/en/dataset/dataset3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/dataset/dataset3/"
+                href="//localhost:1313/zh-cn/dataset/dataset3/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/project/project4/</loc>
+    <loc>//localhost:1313/zh-cn/project/project4/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/project/project4/"
+                href="//localhost:1313/en/project/project4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/project/project4/"
+                href="//localhost:1313/zh-cn/project/project4/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/dataset/dataset4/</loc>
+    <loc>//localhost:1313/zh-cn/dataset/dataset4/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/dataset/dataset4/"
+                href="//localhost:1313/en/dataset/dataset4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/dataset/dataset4/"
+                href="//localhost:1313/zh-cn/dataset/dataset4/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/collaboration/tj/</loc>
+    <loc>//localhost:1313/zh-cn/collaboration/tj/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/collaboration/tj/"
+                href="//localhost:1313/en/collaboration/tj/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/collaboration/tj/"
+                href="//localhost:1313/zh-cn/collaboration/tj/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/project/project5/</loc>
+    <loc>//localhost:1313/zh-cn/project/project5/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/project/project5/"
+                href="//localhost:1313/en/project/project5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/project/project5/"
+                href="//localhost:1313/zh-cn/project/project5/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/collaboration/ger/</loc>
+    <loc>//localhost:1313/zh-cn/collaboration/ger/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/collaboration/ger/"
+                href="//localhost:1313/en/collaboration/ger/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/collaboration/ger/"
+                href="//localhost:1313/zh-cn/collaboration/ger/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/project/project6/</loc>
+    <loc>//localhost:1313/zh-cn/project/project6/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/project/project6/"
+                href="//localhost:1313/en/project/project6/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/project/project6/"
+                href="//localhost:1313/zh-cn/project/project6/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/collaboration/hb4_1/</loc>
+    <loc>//localhost:1313/zh-cn/collaboration/hb4_1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/collaboration/hb4_1/"
+                href="//localhost:1313/en/collaboration/hb4_1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/collaboration/hb4_1/"
+                href="//localhost:1313/zh-cn/collaboration/hb4_1/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/project/project7/</loc>
+    <loc>//localhost:1313/zh-cn/project/project7/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/project/project7/"
+                href="//localhost:1313/en/project/project7/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/project/project7/"
+                href="//localhost:1313/zh-cn/project/project7/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/collaboration/hb4_2/</loc>
+    <loc>//localhost:1313/zh-cn/collaboration/hb4_2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/collaboration/hb4_2/"
+                href="//localhost:1313/en/collaboration/hb4_2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/collaboration/hb4_2/"
+                href="//localhost:1313/zh-cn/collaboration/hb4_2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/collaboration/hb4_3/</loc>
+    <loc>//localhost:1313/zh-cn/collaboration/hb4_3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/collaboration/hb4_3/"
+                href="//localhost:1313/en/collaboration/hb4_3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/collaboration/hb4_3/"
+                href="//localhost:1313/zh-cn/collaboration/hb4_3/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/project/project8/</loc>
+    <loc>//localhost:1313/zh-cn/project/project8/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/project/project8/"
+                href="//localhost:1313/en/project/project8/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/project/project8/"
+                href="//localhost:1313/zh-cn/project/project8/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/</loc>
+    <loc>//localhost:1313/zh-cn/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/"
+                href="//localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/"
+                href="//localhost:1313/zh-cn/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/collaboration/</loc>
+    <loc>//localhost:1313/zh-cn/collaboration/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/collaboration/"
+                href="//localhost:1313/en/collaboration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/collaboration/"
+                href="//localhost:1313/zh-cn/collaboration/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/dataset/</loc>
+    <loc>//localhost:1313/zh-cn/dataset/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/dataset/"
+                href="//localhost:1313/en/dataset/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/dataset/"
+                href="//localhost:1313/zh-cn/dataset/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/people/</loc>
+    <loc>//localhost:1313/zh-cn/people/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/people/"
+                href="//localhost:1313/en/people/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/people/"
+                href="//localhost:1313/zh-cn/people/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/project/</loc>
+    <loc>//localhost:1313/zh-cn/project/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/project/"
+                href="//localhost:1313/en/project/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/project/"
+                href="//localhost:1313/zh-cn/project/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/categories/</loc>
+    <loc>//localhost:1313/zh-cn/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/categories/"
+                href="//localhost:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/categories/"
+                href="//localhost:1313/zh-cn/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/</loc>
+    <loc>//localhost:1313/zh-cn/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
+                href="//localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/tags/"
+                href="//localhost:1313/zh-cn/tags/"
                 />
   </url>
 </urlset>

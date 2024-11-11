@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>实验室</title>
-    <link>http://localhost:1313/zh-cn/dataset/</link>
+    <link>//localhost:1313/zh-cn/dataset/</link>
     <description>Recent content on 实验室</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <atom:link href="http://localhost:1313/zh-cn/dataset/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/zh-cn/dataset/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>病理知识图谱</title>
-      <link>http://localhost:1313/zh-cn/dataset/dataset1/</link>
+      <link>//localhost:1313/zh-cn/dataset/dataset1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh-cn/dataset/dataset1/</guid>
-      <description>&lt;!-- {{if .Params.image_url}} --&gt;&#xA;&lt;div class=&#34;image-container&#34; style=&#34;display: block;&#34;&gt;&#xA;    &lt;img src=&#34;http://localhost:1313/Dataset_files/Pathology_Knowledge_Graph.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- {{end}} --&gt;&#xA;  &lt;!-- 首字母大写 --&gt;&#xA;  &lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;本&lt;/span&gt;&#xA;    项目构建了一个涵盖20种常见疾病的病理知识图谱，数据来源于中国国家卫生健康委员会（卫健委）发布的相关诊疗指南。我们通过使用graphRAG和大语言模型，对这些疾病的诊疗流程、症状表现、检查方法、治疗方案等进行结构化处理，对文本数据进行实体识别和关系抽取，自动化构建了知识图谱中的节点和边，完成了一个可供医学研究、临床决策支持和疾病管理系统使用的知识图谱，帮助研究者查询挖掘潜在的疾病关联、创新诊疗方法，通过结合大语言模型，为医生提供疾病诊断、治疗建议以及个性化医疗方案，提升诊疗效率和准确性。&#xA;      &lt;!-- &lt;span class=&#34;dropcap&#34;&gt;A&lt;/span&gt;&#xA;      t present, a part of the publicly available pathological image pairs data sets such as Quilt are obtained from crawlers on social networks. However, there are some problems in Quilt dataset, such as non-pathological images mixed in pictures, non-pathological descriptions in text, and incorrect correspondence between pictures and text. These data have adverse effects on the training of multimodal models, which makes the performance of the models on downstream tasks worse. Data filtering can filter out data at a high noise level, and models trained on clean subsets will get better performance on downstream tasks. --&gt;&#xA;  &lt;/div&gt;&#xA;&lt;!-- &lt;img class=&#34;col-img&#34; src=&#34;http://localhost:1313/collaborate/liver_cancer.png&#34;&gt;&#xA;&lt;!-- &lt;div class=&#34;col-text&#34;&gt;The collaboration project between Wuhan Tongji Hospital and our laboratory began in July 2023. The collaboration focuses on exploring the recurrence patterns of liver cancer based on liver WSI slices. We utilized AI annotation tools to efficiently complete the identification and segmentation tasks of over 800 H&amp;amp;E and IHC slices, segmenting the most relevant liver cancer tumor regions on the WSI. Compared to traditional manual annotation methods, this approach saved 86% of the time.&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;col-text&#34;&gt;The segmented image data, used as a key data item in downstream recurrence pattern classification tasks, improved the AUC from 0.72 to 0.79.&lt;/div&gt; --&gt; &#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;http://localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+      <guid>//localhost:1313/zh-cn/dataset/dataset1/</guid>
+      <description>&lt;!-- {{if .Params.image_url}} --&gt;&#xA;&lt;div class=&#34;image-container&#34; style=&#34;display: block;&#34;&gt;&#xA;    &lt;img src=&#34;//localhost:1313/Dataset_files/Pathology_Knowledge_Graph.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;/div&gt;&#xA;&lt;!-- {{end}} --&gt;&#xA;  &lt;!-- 首字母大写 --&gt;&#xA;  &lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;本&lt;/span&gt;&#xA;    项目构建了一个涵盖20种常见疾病的病理知识图谱，数据来源于中国国家卫生健康委员会（卫健委）发布的相关诊疗指南。我们通过使用graphRAG和大语言模型，对这些疾病的诊疗流程、症状表现、检查方法、治疗方案等进行结构化处理，对文本数据进行实体识别和关系抽取，自动化构建了知识图谱中的节点和边，完成了一个可供医学研究、临床决策支持和疾病管理系统使用的知识图谱，帮助研究者查询挖掘潜在的疾病关联、创新诊疗方法，通过结合大语言模型，为医生提供疾病诊断、治疗建议以及个性化医疗方案，提升诊疗效率和准确性。&#xA;      &lt;!-- &lt;span class=&#34;dropcap&#34;&gt;A&lt;/span&gt;&#xA;      t present, a part of the publicly available pathological image pairs data sets such as Quilt are obtained from crawlers on social networks. However, there are some problems in Quilt dataset, such as non-pathological images mixed in pictures, non-pathological descriptions in text, and incorrect correspondence between pictures and text. These data have adverse effects on the training of multimodal models, which makes the performance of the models on downstream tasks worse. Data filtering can filter out data at a high noise level, and models trained on clean subsets will get better performance on downstream tasks. --&gt;&#xA;  &lt;/div&gt;&#xA;&lt;!-- &lt;img class=&#34;col-img&#34; src=&#34;//localhost:1313/collaborate/liver_cancer.png&#34;&gt;&#xA;&lt;!-- &lt;div class=&#34;col-text&#34;&gt;The collaboration project between Wuhan Tongji Hospital and our laboratory began in July 2023. The collaboration focuses on exploring the recurrence patterns of liver cancer based on liver WSI slices. We utilized AI annotation tools to efficiently complete the identification and segmentation tasks of over 800 H&amp;amp;E and IHC slices, segmenting the most relevant liver cancer tumor regions on the WSI. Compared to traditional manual annotation methods, this approach saved 86% of the time.&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;col-text&#34;&gt;The segmented image data, used as a key data item in downstream recurrence pattern classification tasks, improved the AUC from 0.72 to 0.79.&lt;/div&gt; --&gt; &#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;//localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
     </item>
     <item>
       <title>已清理的病理图像-描述数据集（公共）</title>
-      <link>http://localhost:1313/zh-cn/dataset/dataset2/</link>
+      <link>//localhost:1313/zh-cn/dataset/dataset2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh-cn/dataset/dataset2/</guid>
-      <description>&lt;!-- &lt;div class=&#34;image-container&#34; style=&#34;display: block;&#34;&gt;&#xA;    &lt;img src=&#34;http://localhost:1313/Dataset_files/Pathology_Knowledge_Graph.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;/div&gt; --&gt;&#xA;&lt;!-- {{end}} --&gt;&#xA;  &lt;!-- 首字母大写 --&gt;&#xA;  &lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;从&lt;/span&gt;&#xA;    公开渠道收集和整理的病理图文数据集，主要包括从社交平台、论坛、医学论文、病理教学视频和教材等来源获得的病理图像和它们所对应的文本注释。这些图像-文本配对经过基本清洗和治理，其中非病理领域的描述和可读性低的文本注释已被去除。数据集中包含有价值的病理多模态知识和对应关系。&#xA;  &lt;/div&gt;</description>
+      <guid>//localhost:1313/zh-cn/dataset/dataset2/</guid>
+      <description>&lt;!-- &lt;div class=&#34;image-container&#34; style=&#34;display: block;&#34;&gt;&#xA;    &lt;img src=&#34;//localhost:1313/Dataset_files/Pathology_Knowledge_Graph.png&#34; alt=&#34;&#34;&gt;&#xA;&lt;/div&gt; --&gt;&#xA;&lt;!-- {{end}} --&gt;&#xA;  &lt;!-- 首字母大写 --&gt;&#xA;  &lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;从&lt;/span&gt;&#xA;    公开渠道收集和整理的病理图文数据集，主要包括从社交平台、论坛、医学论文、病理教学视频和教材等来源获得的病理图像和它们所对应的文本注释。这些图像-文本配对经过基本清洗和治理，其中非病理领域的描述和可读性低的文本注释已被去除。数据集中包含有价值的病理多模态知识和对应关系。&#xA;  &lt;/div&gt;</description>
     </item>
     <item>
       <title>已清理的病理图像-描述数据集（全部）</title>
-      <link>http://localhost:1313/zh-cn/dataset/dataset3/</link>
+      <link>//localhost:1313/zh-cn/dataset/dataset3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh-cn/dataset/dataset3/</guid>
+      <guid>//localhost:1313/zh-cn/dataset/dataset3/</guid>
       <description>&lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;从&lt;/span&gt;&#xA;    公开渠道和非公开渠道收集和整理的病理图文数据集，主要包括从社交平台、论坛、医学论文、病理教学视频和教材等开放来源获得的病理图像和它们所对应的文本注释，以及从专业性更强的合作单位、医院等非开放来源获得的病理报告、教学笔记等。这些图像-文本配对经过基本清洗和治理，其中非病理领域的描述和可读性低的文本注释已被去除。数据集中包含更加准确的的病理多模态知识和对应关系。&#xA;  &lt;/div&gt;</description>
     </item>
     <item>
       <title>乳腺癌基准测试</title>
-      <link>http://localhost:1313/zh-cn/dataset/dataset4/</link>
+      <link>//localhost:1313/zh-cn/dataset/dataset4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh-cn/dataset/dataset4/</guid>
+      <guid>//localhost:1313/zh-cn/dataset/dataset4/</guid>
       <description>&lt;div class=&#34;intro-text&#34;&gt;&#xA;    &lt;span class=&#34;dropcap&#34;&gt;我&lt;/span&gt;&#xA;    们开发了一个乳腺癌基准测试，用于评估人工智能模型在病理图像分析方面的性能。我们从合作医院获取了10个全视野切片图像（WSI），由专业病理医生对坏死、神经受侵、钙化、脉管瘤栓、导管原位癌（DCIS）和浸润性导管癌（IDC）等六个乳腺癌特征区域进行了精确标注，最终获得了约1000张高质量的图像数据。利用这些数据，我们对多模态大型语言模型（MLLM）和CLIP类模型在上述六个乳腺癌诊断任务上进行了评测。CLIP模型的测试使用预定义的模板和近义词表，基于输入图像与预设文本的相似度得分进行评估；MLLM模型的测试则结合了模板和提示，引导模型在回答病理相关问题时以“是”或“否”作出回应。通过这个乳腺癌基准测试，我们旨在评估人工智能模型在病理图像分析中的性能，为研究者提供一个统一的平台，促进人工智能在乳腺癌诊断领域的发展。&#xA;  &lt;/div&gt;</description>
     </item>
   </channel>
