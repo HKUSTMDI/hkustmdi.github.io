@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>实验室</title>
+    <link>http://localhost:1313/zh-cn/collaboration/</link>
+    <description>Recent content on 实验室</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:1313/zh-cn/collaboration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zh-cn/collaboration/lbp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh-cn/collaboration/lbp/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;随着人工智能技术的发展，尤其是在医疗领域，机器学习和深度学习技术为病理学的诊断和研究提供了新的可能性。实验室与广州安必平医药科技股份有限公司（以下称“安必平”）的合作，旨在整合双方优势，聚焦病理诊断智能化发展领域，对多模态医疗数据的整合和增强、基于众包及知识图谱等的医疗影像数据标注及处理、及以数据为中心的可解释医疗人工智能等相关前沿课题进行深入合作，提升病理诊断服务及医疗数据价值，推动病理行业高质量发展。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;本合作项目于2023年5月正式启动。实验室对此的研究项目包括：医疗数据的众包标注，医疗AI任务的弱监督学习，医疗AI任务的可解释性研究等&lt;/div&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;http://localhost:1313/collaborate/LBP_MDI_establish.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;目前我们已搭建可对免疫组化、免疫荧光等病理图片进行精准标注的自动标注平台，病理医生使用后反馈可节省50%的标注时间。我们还研发了具有病理知识的大语言模型，对给定病理图像展示出良好的判读能力，我们将持续优化现有的数据模型，力求达到病理科初级医生的阅片和诊断水平。同时，我们也对已存储的病理图片、病理文字描述等非结构化的病理数据进行数据挖掘，为病理科研提供坚实的数据基础。&lt;/div&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;http://localhost:1313/collaborate/LBP_data_mining.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;病理是肿瘤诊断的“金标准”，癌症的防与控均离不开病理诊断，随着病理诊断向数字化和智能化转型，病理数据的标准化与高效标注成为了转型过程中的“卡脖子”技术。安必平是国内病理诊断领域首家上市企业，专门从事病理诊断相关技术产品研发，旗下的宫颈液基细胞学图像辅助诊断软件（LBP-PIAS）已在医学图像分析、临床辅助诊断等方面实现技术突破。在这一背景下，实验室负责人陈雷教授指出，当前的机器学习领域，模型和硬件资源是相对充足的，而高质量的数据资源却异常稀缺。他期望，通过与安必平的合作，实现“以模型为中心”到“以数据为中心”的转变。将复杂医学任务拆解成初级医学工作者可以胜任的简单任务，降低数据的获取成本；利用大量自动标注的简单任务数据提高AI诊断准确率，充分挖掘病理数据的潜在价值；通过量化医学指标、抽取诊断规则，提供数据为基础的可解释性，解决病理诊断智能化过程中的痛点，为我国甚至全世界病理诊断智能化，通过医学精准诊断造福社会而贡献力量。&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zh-cn/collaboration/xh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh-cn/collaboration/xh/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;与北京协和医学院、深圳妇幼保健院进行合作，结合病理切片和p16染色结果，利用深度学习算法对宫颈组织病理学样本进行二分类（LSIL-和HSIL+），开发一款高效、准确、可靠的宫颈癌组学病理图像人工智能诊断系统，以提高宫颈癌早期诊断准确率、缩短病理诊断的时间和流程，降低病人治疗和诊断成本，改善公共卫生和医疗健康服务的水平。&lt;/div&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;http://localhost:1313/collaborate/xh_1.png&#34;&gt;&#xA;&lt;img class=&#34;col-img&#34; src=&#34;http://localhost:1313/collaborate/xh_2.png&#34;&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zh-cn/collaboration/xh_col/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh-cn/collaboration/xh_col/</guid>
+      <description>&lt;img class=&#34;col-img&#34; src=&#34;http://localhost:1313/collaborate/xh_col.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;阴道镜是一种用于筛查和诊断女性宫颈、阴道等部位异常的检查技术,解读阴道镜检查报告中通常包含专业术语和复杂的医学数据，普通患者难以理解，而医生也面临着提高诊断和沟通效率的需求。我们与北京协和医学院、深圳妇幼保健院进行合作，旨在解决这一痛点，通过智能化的解读系统，使患者能够轻松理解自己的报告，加深对自身健康状况的认知。同时为医生提供技术支持和基于报告的个性化诊断建议，提高诊断的准确性和服务质量，提升医患之间的沟通效率。&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zh-cn/collaboration/tj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh-cn/collaboration/tj/</guid>
+      <description>&lt;img class=&#34;col-img&#34; src=&#34;http://localhost:1313/collaborate/liver_cancer.png&#34;&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;武汉同济医院和我们实验室的合作项目开始于2023年7月。合作内容是基于肝脏WSI切片探索肝癌复发模式。我们利用AI标注工具，高效完成800余张H&amp;amp;E、IHC切片的识别与分割任务，分割出WSI上复发模式最相关的肝癌肿瘤区域，相比于传统的手动标注方式，节省了86%的时间。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;分割后的图像数据在下游复发模式的分类任务作为关键数据项，将AUC从0.72提升到了0.79.&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;http://localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zh-cn/collaboration/ger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh-cn/collaboration/ger/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;本项目旨在开发并验证一种基于多模态AI模型的预测系统，该系统专注于评估不同药物治疗胃食管反流（GER）症状的疗效。GER症状源于胃及十二指肠内容物异常反流至食管，引发一系列食管内外症状或并发症。罗马IV标准将GER症状患者细分为GERD（包括食管炎和非糜烂性反流病NERD）及功能性食管病（如反流性高敏感RH和功能性烧心FH）。鉴于不同亚型间病理机制差异显著，当前治疗方法如质子泵抑制剂（PPI）虽为首选，但高达半数患者反应不佳。本项目通过整合患者临床信息、胃镜图像、高分辨率食管测压及动态pH-阻抗监测等多维度数据，构建AI模型，以期精准预测各治疗方案对GER症状的疗效，为临床医生提供个性化用药指导。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;http://localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zh-cn/collaboration/hb4_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh-cn/collaboration/hb4_1/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;河北医科大学第四医院与香港科技大学（广州）医疗数据联合智能实验中心于2024.9正式启动了基于HE切片预测PIK3CA基因突变状态与新辅助治疗疗效的联合研究项目。该项目旨在应对精准医疗领域的共同挑战，尤其是在乳腺癌患者的治疗中，如何通过高效、准确的基因突变预测提升新辅助治疗的疗效。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;在该项目中，双方合作采用了最前沿的人工智能和深度学习算法，结合大规模的病理HE切片数据，开发精准预测PIK3CA突变状态的智能模型。通过将病理图像与基因突变分析相结合，我们希望实现高效、非侵入性的突变状态预测，从而为乳腺癌患者提供更具个性化和优化的治疗方案。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;截至目前，合作取得了重要进展，初步成果包括建立了高质量的病理图像数据库和早期的算法模型验证。未来，双方将进一步优化模型，推进其临床应用，预计该技术将在乳腺癌新辅助治疗的疗效预测中展现出巨大的潜力。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;该合作为双方带来了显著的益处：河北医科大学第四医院通过该项目进一步加强了在医学数据分析和精准医疗领域的科研能力，推动了院内的创新发展；而香港科技大学（广州）则通过与医疗机构的深度合作，将最新的智能算法技术直接应用于临床实践，进一步推动了医学智能化的应用落地。双方通过此次合作，不仅加强了学术界和临床实践之间的桥梁，也为未来在精准医疗领域的创新提供了广泛的可能性。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;http://localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zh-cn/collaboration/hb4_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh-cn/collaboration/hb4_2/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;河北医科大学第四医院与香港科技大学（广州）医疗数据联合智能实验中心于2024.9正式启动了基于HE图像及HER2免疫组化图像建立多模态深度学习模型预测转移性乳腺癌预后的联合研究项目。该项目通过多模态数据的整合和深度学习技术的应用，提供了更加精确和高效的乳腺癌预后预测方法，具备显著的临床应用价值，同时推动了人工智能与医学的深入结合。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;乳腺癌是全球女性最常见的恶性肿瘤之一，HER2是乳腺癌原发和转移的一个重要的预后和预测指标。最近，新型的抗体药物偶联物（Antibody-drug conjugates, ADCs）在晚期HER2低表达（HER2-low）乳腺癌患者中展现出了显著的治疗效果，从而扩展了之前仅针对HER2阳性患者的治疗方案。然而乳腺癌的HER2表达具有时空异质性，在用新型ADCs药物治疗转移性乳腺癌患者时，原发灶与转移灶的HER2表达不一致影响了其疗效及患者预后。对这类患者进行精确的预后预测对于个体化治疗至关重要。传统的预后预测依赖于临床病理特征，但这些方法在准确性和灵活性上存在局限。该合作实验室采用了多模态深度学习方法，结合HE图像和HER2免疫组化图像的信息，以提高预测转移性乳腺癌预后的准确性。多模态深度学习模型的核心优势在于能够整合不同类型的数据，自动学习并提取各模态中的关键特征，从而生成更具临床意义的预测。&lt;/div&gt;&#xA;&lt;div class=&#34;col-text&#34;&gt;该项目不仅解决了乳腺癌预后预测领域中的关键挑战，还通过多模态数据整合和深度学习技术，推动了智能医疗的发展。对双方而言，这次合作将带来诊断效率和科研影响力的双重提升，未来有望在更多领域取得突破，推动医学和人工智能技术的共同进步。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;http://localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/zh-cn/collaboration/hb4_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/zh-cn/collaboration/hb4_3/</guid>
+      <description>&lt;div class=&#34;col-text&#34;&gt;我们与河北医科大学第四医院进行合作，研究乳腺癌在人工智能领域的应用。我们共同合作乳腺癌WSI标注、乳腺癌基准测试构建、乳腺癌多模态大模型构建等。我们与河北医科大学第四医院建立了深入的合作关系，共同致力于乳腺癌在人工智能领域的应用研究。合作内容涵盖了乳腺癌全视野切片图像（WSI）的标注、乳腺癌基准测试的构建以及乳腺癌多模态大型模型的开发等方面。在合作过程中，双方团队进行了密切的交流与协作，特别是在已初步构建完成的乳腺癌基准测试项目上。我们就乳腺癌的研究方向进行了深入探讨，对数据标注方式展开了详细讨论，并对评估方法进行了充分论证。这些努力确保了基准测试的准确性和可靠性。通过与河北医科大学第四医院的紧密合作，我们充分发挥了各自领域的优势，加速了乳腺癌研究的进展。&lt;/div&gt;&#xA;&lt;!-- &lt;div&gt;&#xA;&lt;img src=&#34;http://localhost:1313/product_files/Non-pathological_Image_Filtering.png&#34; alt=&#34;Project 1&#34;&gt;&#xA;&lt;/div&gt; --&gt;</description>
+    </item>
+  </channel>
+</rss>
