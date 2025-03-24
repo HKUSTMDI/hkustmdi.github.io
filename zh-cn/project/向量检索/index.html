@@ -1096,11 +1096,11 @@ $$</p>
 <p>对每个节点$v_i$的邻居列表$N(v_i)$，按原始距离排序生成秩次（rank），将低秩边（重要连接）前移。该操作在GPU上实现完全并行化，单卡可在1秒内完成百万级节点的秩次重排。</p>
 <p><strong>2. 反向边增强</strong>：</p>
 <p>为提升图连通性，对每条边$v_i → v_j$添加反向边$v_j → v_i$，但限制各节点出度不超过d（默认d=64）。反向边按源节点秩次动态截断，确保显存访问连续性。</p>
-<h3 id="检索机制-3">检索机制</h3>
+<h4 id="检索机制-3">检索机制</h4>
 <img src="/product_files/vector_retrieval/CAGRA2.png" alt="image-20250324135335876" style="zoom:40%;display: block; margin-left: auto; margin-right: auto;" />
 <div align="center">图8：CAGRA搜索流程</div>
 <p>CAGRA[14]的检索流程针对GPU架构进行了系统性重构，其核心突破在于<strong>全流水线并行化</strong>与<strong>动态候选缓冲机制</strong>的设计。与HNSW等层次化图索引不同，CAGRA放弃逐层递进的串行路径优化策略，转而通过<strong>广度优先的并行扩展</strong>提升GPU线程利用率，具体实现如下：</p>
-<h4 id="1双缓冲架构设计"><strong>（1）双缓冲架构设计</strong></h4>
+<h5 id="1双缓冲架构设计"><strong>（1）双缓冲架构设计</strong></h5>
 <p>CAGRA采用<strong>Top-M Buffer</strong>与<strong>Candidate Buffer</strong>的双层动态缓冲机制（图8，Top-M Buffer有序存储当前最优结果；Candidate Buffer无序存储潜在候选），实现计算与访存的深度解耦：</p>
 <ul>
 <li>
@@ -1126,7 +1126,7 @@ $$</p>
 </ul>
 </li>
 </ul>
-<h4 id="2并行搜索策略"><strong>（2）并行搜索策略</strong></h4>
+<h5 id="2并行搜索策略"><strong>（2）并行搜索策略</strong></h5>
 <p>在GPU线程束（Warp）级别实现候选节点的批量扩展与距离计算，具体流程如下：</p>
 <p><strong>1. 随机种子采样</strong>：每个查询启动时，从全局图中随机选取$E$个节点（如$E=64$）作为初始候选，存入<strong>Candidate Buffer</strong>中。</p>
 <p><strong>2. 更新Top_M</strong>：将<strong>Top-M Buffer</strong>与<strong>Candidate Buffer</strong>合并，保留前$M$个最近邻，存入<strong>Top_M Buffer</strong>。</p>
