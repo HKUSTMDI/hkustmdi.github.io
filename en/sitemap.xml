@@ -325,5 +325,7 @@
                 hreflang="en-US"
                 href="https://hkustmdi.github.io/en/tags/"
                 />
+  </url><url>
+    <loc>https://hkustmdi.github.io/en/project/vector_retrieval/</loc>
   </url>
 </urlset>

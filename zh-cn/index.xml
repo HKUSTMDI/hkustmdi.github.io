@@ -154,5 +154,12 @@
       <guid>https://hkustmdi.github.io/zh-cn/people/</guid>
       <description></description>
     </item>
+    <item>
+      <title>向量检索及GPU加速</title>
+      <link>https://hkustmdi.github.io/zh-cn/project/%E5%90%91%E9%87%8F%E6%A3%80%E7%B4%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hkustmdi.github.io/zh-cn/project/%E5%90%91%E9%87%8F%E6%A3%80%E7%B4%A2/</guid>
+      <description>&lt;p&gt;因此，&lt;strong&gt;如何高效索引与检索大规模向量数据&lt;/strong&gt;成为关键问题。下文将由浅入深介绍向量检索技术，并探讨GPU加速在这一领域的核心价值。&lt;/p&gt;&#xA;&lt;h2 id=&#34;向量检索基础&#34;&gt;向量检索基础&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-数据向量化从非结构化数据到语义空间&#34;&gt;1. 数据向量化：从非结构化数据到语义空间&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;核心思想&lt;/strong&gt;：让计算机“理解”非结构化数据&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

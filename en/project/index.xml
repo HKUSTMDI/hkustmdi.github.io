@@ -63,5 +63,12 @@
       <guid>https://hkustmdi.github.io/en/project/project8/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Vector Retrieval and GPU Acceleration</title>
+      <link>https://hkustmdi.github.io/en/project/vector_retrieval/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hkustmdi.github.io/en/project/vector_retrieval/</guid>
+      <description>&lt;p&gt;Therefore, &lt;strong&gt;how to efficiently index and retrieve large-scale vector data&lt;/strong&gt; becomes a critical issue. The following sections will introduce vector retrieval technology from basic to advanced concepts and discuss the core value of GPU acceleration in this domain.&lt;/p&gt;&#xA;&lt;h2 id=&#34;fundamentals-of-vector-retrieval&#34;&gt;Fundamentals of Vector Retrieval&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-data-vectorization-from-unstructured-data-to-semantic-space&#34;&gt;1. Data Vectorization: From Unstructured Data to Semantic Space&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Core Idea&lt;/strong&gt;: Enabling computers to &amp;ldquo;understand&amp;rdquo; unstructured data&lt;/p&gt;&#xA;&lt;p&gt;In the medical pathology field, whether it&amp;rsquo;s digital pathology slides or diagnostic report texts, they are essentially &lt;strong&gt;unstructured data&lt;/strong&gt;—lacking predefined formats but rich in semantic information. To make them computable, we need to map this data into a high-dimensional vector space using &lt;strong&gt;embedding models&lt;/strong&gt;, thereby constructing quantifiable semantic representations.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
