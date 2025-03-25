@@ -849,309 +849,41 @@
 
   
   <div class="intro-text">
-    <span class="dropcap">W</span>
-    ith the rapid advancement of artificial intelligence and big data, vector retrieval has become a core technology in areas such as image search, recommendation systems, and natural language processing. In medical pathology, each digital pathology slide contains vast amounts of microscopic information, and each pathology report includes high-level semantic content. Modern AI technologies (e.g., UNI encoders, MPNet) can encode these images or textual information into high-dimensional vectors (e.g., 1024 dimensions), creating a computable semantic space for semantic-level searches through distance calculations. As a key technology in this process, Vector Retrieval enables quick identification of similar information in databases based on similarity, providing support for diagnostic decisions and treatment recommendations. However, when data scales reach tens or hundreds of millions, traditional 'brute force search' methods (calculating distances between all vectors one by one) are too time-consuming to meet clinical real-time requirements.
+    <span class="dropcap"></span>
+    
       
   </div>
-<p>Therefore, <strong>how to efficiently index and retrieve large-scale vector data</strong> becomes a critical issue. The following sections will introduce vector retrieval technology from basic to advanced concepts and discuss the core value of GPU acceleration in this domain.</p>
-<h2 id="fundamentals-of-vector-retrieval">Fundamentals of Vector Retrieval</h2>
-<h3 id="1-data-vectorization-from-unstructured-data-to-semantic-space">1. Data Vectorization: From Unstructured Data to Semantic Space</h3>
-<p><strong>Core Idea</strong>: Enabling computers to &ldquo;understand&rdquo; unstructured data</p>
-<p>In the medical pathology field, whether it&rsquo;s digital pathology slides or diagnostic report texts, they are essentially <strong>unstructured data</strong>—lacking predefined formats but rich in semantic information. To make them computable, we need to map this data into a high-dimensional vector space using <strong>embedding models</strong>, thereby constructing quantifiable semantic representations.</p>
-<p><strong>Technical Implementation</strong>:</p>
-<ul>
-<li>
-<p><strong>Images</strong>: Use deep neural networks (such as ResNet[3], ViT[4]) to extract morphological features from pathology slides, outputting fixed-length vectors (e.g., 1024 dimensions). For example, characteristics like glandular structures and nuclear atypia in breast cancer are encoded as specific dimension activation values within vectors.</p>
-</li>
-<li>
-<p><strong>Texts</strong>: Utilize Transformer models (such as BERT[5], PubMedBERT[6]) to convert pathology reports into vectors. Key terms in reports like &ldquo;moderately differentiated adenocarcinoma&rdquo; and &ldquo;lymphatic metastasis&rdquo; are encoded into vectors with semantically similar directions.</p>
-</li>
-</ul>
-<p>A good embedding model should preserve the semantics of the original data, meaning that <strong>vectors representing similar pathological features are closer in space</strong>. For instance, the similarity score between two lung adenocarcinoma slides might be 0.92, whereas the similarity between lung adenocarcinoma and squamous cell carcinoma might only be 0.65. Common measures of similarity include Euclidean distance, cosine similarity, dot product, etc.</p>
-<h3 id="2-similarity-search-evolution-from-knns-to-anns">2. Similarity Search: Evolution from KNNS to ANNS</h3>
-<p><strong>Basic Problem</strong>: Given a query vector, how to quickly find the top-K most similar results in the database?</p>
-<h3 id="1-limitations-of-traditional-knns-methods">(1) Limitations of Traditional KNNS Methods</h3>
-<p>Early similarity searches mainly relied on <strong>Exact Nearest Neighbor Search (K-Nearest Neighbors Search, KNNS)</strong>, which aimed to accelerate computations through building indexing structures, including:</p>
-<ul>
-<li>
-<p><strong>KD-Tree[7]</strong>: Recursively divides space based on data dimensions (e.g., median or average division along each dimension of n-dimensional vectors) to construct binary trees for accelerating region queries.</p>
-</li>
-<li>
-<p><strong>Ball-Tree[8]</strong>: Divides space using hyperspheres, utilizing sphere containment relationships to quickly exclude irrelevant regions.</p>
-</li>
-</ul>
-<p><strong>However, KNNS faces significant bottlenecks in large-scale medical data scenarios</strong>:</p>
-<ul>
-<li>
-<p><strong>Dimensionality Curse</strong>: KD-Trees and Ball-Trees suffer from performance degradation in high-dimensional spaces (e.g., hundreds of dimensions or more), where recursive divisions and retrieval efficiency plummet.</p>
-</li>
-<li>
-<p><strong>Dynamic Update Deficiencies</strong>: KD-Trees or Ball-Trees require static data; however, medical databases continuously add new cases (e.g., thousands of new pathology slides daily). Due to the inability to dynamically insert data, rebuilding KD-Trees after each update is required, failing to meet real-time needs.</p>
-</li>
-</ul>
-<h3 id="2-breakthroughs-in-anns-approximation">(2) Breakthroughs in ANNS Approximation</h3>
-<p>To adapt to efficient retrieval of large-scale high-dimensional vector data, <strong>Approximate Nearest Neighbor Search (ANNS)</strong> achieves efficiency gains by tolerating controlled precision loss.</p>
-<p>The following sections will detail some mainstream vector indexing techniques, including those based on space partitioning and quantization methods (IVFPQ[10]), graph-based retrieval methods (NN-Descent[11], HNSW[12]), and GPU-accelerated retrieval methods (SONG[13], CAGRA[14]).</p>
-<h2 id="analysis-of-mainstream-indexing-techniques"><strong>Analysis of Mainstream Indexing Techniques</strong></h2>
-<h3 id="1-ivfpq">1. IVFPQ</h3>
-<h4 id="construction-process"><strong>Construction Process</strong></h4>
-<p>IVFPQ (Inverted File Index with Product Quantization) [10] is an efficient indexing method that combines space partitioning and vector compression. Its core process is divided into two phases: inverted index construction (IVF) and product quantization (PQ):</p>
-<h4 id="1-inverted-index-construction-ivf"><strong>(1) Inverted Index Construction (IVF)</strong></h4>
-<img src="/product_files/vector_retrieval/IVF.png" alt="image-20250321103910930" style="zoom:30%;display: block; margin-left: auto; margin-right: auto;" />
-<div align="center">   Figure 1: Example of an inverted file index </div>
-<p>To better understand, consider a document keyword search example as shown in the left part of Figure 1. Suppose we have a set of documents (Document1, Document2, Document3, Document4), each containing different words. If we want to find which documents contain a specific word like &ldquo;dog,&rdquo; a straightforward approach would involve iterating through every word in every document, checking if it matches &ldquo;dog.&rdquo; This method is obviously time-consuming, potentially requiring a full scan of all documents.</p>
-<p>IVF takes a different approach by pre-calculating which words are stored in which documents, as shown in the right part of Figure 1. By recording which documents each word corresponds to, searching for a word only requires finding its location to know where it appears. Since the length of the vocabulary is often shorter than the total number of documents, this can save search time.</p>
-<p>In the context of vector retrieval, the basic process is as follows:</p>
-<p><strong>1. Cluster Center Generation</strong>: Use the K-Means algorithm to cluster the entire vector dataset $\mathcal{D} = {v_1, v_2, &hellip;, v_n}$, generating $n_{\text{list}}$ cluster centers $C = {c_1, c_2, &hellip;, c_{n_{\text{list}}}}$.</p>
-<p><strong>2. Inverted List Construction</strong>: For each cluster center $c_i$, record the set of member vectors $\mathcal{L}_i = {v_j | \arg\min_k |v_j - c_k|_2 = i}$, forming an inverted list structure.</p>
-<p><strong>3. Parameter Significance</strong>: $n_{\text{list}}$ controls the number of coarse-grained clusters; larger values increase retrieval accuracy but also computational cost (default value is typically 1024).</p>
-<h4 id="2-product-quantization-pq"><strong>(2) Product Quantization (PQ)</strong></h4>
-<img src="/product_files/vector_retrieval/PQ.png" alt="image-20250321103910930" style="zoom:20%;display: block; margin-left: auto; margin-right: auto;" />
-<div align="center">   Figure 2: Example of product quantization </div>
-<p>The main goal of product quantization is to reduce memory usage. With a large number of vectors, memory consumption can be significant. The method is designed to reduce memory usage, as illustrated in Figure 2. The steps are as follows:</p>
-<p><strong>1. Vector Partitioning</strong>: Divide the original vector $v \in \mathbb{R}^d$ into $M$ sub-vector blocks $v = [v^{(1)}, v^{(2)}, &hellip;, v^{(M)}]$, each of dimension $d/M$.</p>
-<p><strong>2. Subspace Quantization</strong>: Perform K-Means clustering uniformly across all subspaces $\mathbb{R}^{d/M}$ to generate codebooks $\mathcal{B}<em>m = {b</em>{m,1}, b_{m,2}, &hellip;, b_{m,2^x}}$, where $x$ is the bit number of the codebook (typically $x=8$, $2^x=256$).</p>
-<p><strong>3. Encoding Compression</strong>: Replace the original vector $v$ with the cluster ID codes corresponding to each sub-block $\text{code}(v) = [k_1, k_2, &hellip;, k_M]$, where $k_m = \arg\min_j |v^{(m)} - b_{m,j}|_2$.</p>
-<h4 id="memory-optimization-analysis"><strong>Memory Optimization Analysis</strong></h4>
-<p>The total storage after quantization consists of two parts:</p>
-<ul>
-<li>
-<p><strong>Codebook Storage</strong>: $M \times 2^x \times \frac{d}{M} \times \text{float32} = 2^x d \times \text{float32}$.</p>
-</li>
-<li>
-<p><strong>Encoded Storage</strong>: $n \times M \times x \text{ bits}$.</p>
-</li>
-</ul>
-<p>For example, with $d=1024$, $M=8$, and $x=8$, the original storage requires $1024 \times 4 = 4096$ bytes per vector, while PQ compression reduces this to $8 \times 8 = 64$ bits (8 bytes), achieving a compression ratio of up to 512 times.</p>
-<h4 id="retrieval-mechanism"><strong>Retrieval Mechanism</strong></h4>
-<p><strong>1. Coarse-Grained Filtering (IVF Phase)</strong>: Calculate the distance between the query vector $q$ and all cluster centers $c_i$, selecting the nearest $n_{\text{probe}}$ clusters.</p>
-<p><strong>2. Fine-Grained Calculation (PQ Phase)</strong>: For each vector $v_j$ in the candidate clusters $\mathcal{L}_i$, use precomputed codebooks for fast distance estimation:</p>
-<p>$$
-\hat{d}(q, v_j) = \sum_{m=1}^M | q^{(m)} - b_{m, k_j^{(m)}} |_2^2
-$$</p>
-<p>where $q^{(m)}$ is the $m$-th sub-block of the query vector, and $b_{m, k_j^{(m)}}$ is the codeword center corresponding to the $m$-th sub-block of $v_j$.</p>
-<p><strong>3. Top-K Sorting</strong>: Sort by calculated distances in ascending order, returning the top $K$ nearest neighbor vectors globally.</p>
-<h3 id="2-nn-descent">2. NN-Descent</h3>
-<h4 id="construction-process-1"><strong>Construction Process</strong></h4>
-<p>NN-Descent (Nearest Neighbor Descent) [11] is an approximate nearest neighbor search algorithm based on local graph structure optimization. Its core idea is to dynamically adjust neighbor relationships through iterative optimization, gradually approaching the true $K$ nearest neighbor graph. The construction process can be formally described as follows:</p>
-<h4 id="1-graph-initialization"><strong>(1) Graph Initialization</strong></h4>
-<p><strong>1. Random Neighbor Sampling</strong>: For each data point $v_i \in \mathcal{D}$, randomly select $K$ initial neighbors $N^{(0)}(v_i)$ to construct the initial directed neighborhood graph $G_0$.</p>
-<p><strong>2. Reverse Neighbor Indexing</strong>: Simultaneously record reverse neighbor relationships $R(v_i) = {v_j | v_i \in N^{(0)}(v_j)}$ to form a bidirectional connection structure.</p>
-<h4 id="2-iterative-optimization"><strong>(2) Iterative Optimization</strong></h4>
-<img src="/product_files/vector_retrieval/NNdescent.png" style="zoom:30%;display: block; margin-left: auto; margin-right: auto;"/>
-<div align="center">   Figure 3: Schematic of Iterative Optimization </div>
-<p>During the $t$-th iteration, optimize neighbor relationships using reverse neighbor propagation and triangle closure properties. As shown in Figure 3, during one iteration, for point $a$, find all its neighbors and reverse neighbors (e.g., $b$, $c$, and $d$). For point $c$, find all its neighbors and reverse neighbors (e.g., $e$ and $d$). Calculate the distance between $a$ and $e$. If the distance from $a$ to $e$ is shorter than the path from $a$ to $c$ to $e$, update the graph by connecting $a$ and $e$. The detailed algorithm process is as follows:</p>
-<p><strong>1. Candidate Set Generation</strong>:</p>
-<p>For point $v_i$, merge its neighbors and reverse neighbors to generate a candidate set:
-$$
-\mathcal{C}(v_i) = N^{(t)}(v_i) \cup \bigcup_{v_j \in N^{(t)}(v_i)} R(v_j)
-$$</p>
-<p><strong>2. Local Distance Calculation</strong>:</p>
-<p>Compute distances between $v_i$ and all candidate points in $\mathcal{C}(v_i)$, and filter out closer potential neighbors.</p>
-<p><strong>3. Neighbor Update</strong>:</p>
-<p>For each $v_j \in \mathcal{C}(v_i)$, if $d(v_i, v_j) &lt; \max_{v_k \in N^{(t)}(v_i)} d(v_i, v_k)$, add $v_j$ to the new neighbor set $N^{(t+1)}(v_i)$.</p>
-<p><strong>4. Degree Constraint</strong>:</p>
-<p>Retain the top $K$ nearest neighbors for each point $v_i$, pruning the rest of the connections.</p>
-<h4 id="3-convergence-conditions"><strong>(3) Convergence Conditions</strong></h4>
-<p>Iteration terminates when one of the following conditions is met:</p>
-<ul>
-<li>
-<p>The neighbor update ratio falls below a threshold $\epsilon$ (e.g., $\epsilon=0.01$).</p>
-</li>
-<li>
-<p>The maximum number of iterations $T_{\max}$ is reached (e.g., $T_{\max}=20$).</p>
-</li>
-</ul>
-<h4 id="retrieval-mechanism-1"><strong>Retrieval Mechanism</strong></h4>
-<p>On the constructed neighborhood graph, efficient search is achieved with the following strategies:</p>
-<p><strong>1. Multi-start Parallel Search</strong>:</p>
-<p>Start from $L$ randomly selected starting points (e.g., $L=50$) and execute parallel greedy hill-climbing algorithms.</p>
-<p><strong>2. Dynamic Candidate List Maintenance</strong>:</p>
-<p>For each search path, maintain a dynamic candidate queue $\mathcal{Q}$, retaining the top $K$ candidates sorted by distance.</p>
-<p><strong>3. Neighbor Expansion Strategy</strong>:</p>
-<p>For the current nearest point $v_{\text{curr}}$, add its neighbor set $N(v_{\text{curr}})$ to $\mathcal{Q}$ and update the distance sorting.</p>
-<p><strong>4. Termination Condition</strong>:</p>
-<p>Terminate the search when the minimum distance in the candidate queue $\mathcal{Q}$ does not update for $\tau$ consecutive iterations (e.g., $\tau=3$).</p>
-<h4 id="mathematical-modeling"><strong>Mathematical Modeling</strong></h4>
-<p>Let the distance between any two points in dataset $\mathcal{D}$ be $d(v_i, v_j)$. The algorithm approximates the true K-nearest neighbor graph by minimizing the following objective function:
-$$
-\mathcal{L}(G) = \sum_{v_i \in \mathcal{D}} \sum_{v_j \in N(v_i)} d(v_i, v_j)
-$$
-The iterative optimization process can be seen as performing gradient descent within local regions, gradually reducing $\mathcal{L}(G)$.</p>
-<h3 id="3-hnsw">3. HNSW</h3>
-<h4 id="construction-process-2"><strong>Construction Process</strong></h4>
-<p>HNSW (Hierarchical Navigable Small World) [12] is an efficient indexing method that combines hierarchical structures with navigable small-world graphs. Its core design inspiration comes from natural beehive networks and the multi-layer topological characteristics of human social networks. The algorithm achieves exponential search path reduction by constructing a graph structure with decreasing layers. The specific process is as follows:</p>
-<h5 id="1-generation-of-hierarchical-graph-structure"><strong>(1) Generation of Hierarchical Graph Structure</strong></h5>
-<img src="/product_files/vector_retrieval/HNSW.png" alt="image-20250321103910930" style="zoom:30%;display: block; margin-left: auto; margin-right: auto;" />
-<div align="center">   Figure 4: Schematic of HNSW Hierarchical Structure (Assuming the highest layer L=3, counting layers from 0) </div>
-<p><strong>1. Probabilistic Layer Assignment</strong>: For each data point $v_i \in \mathcal{D}$, randomly assign the maximum layer $l_{\max}(v_i)$, satisfying:
-$$
-l_{\max}(v_i) = \lfloor -\ln(\text{rand}(0,1)) \cdot m_L \rfloor
-$$</p>
-<p>where $m_L$ is the inter-layer decay coefficient (typically set to $1/\ln(M)$, where $M$ is the maximum number of connections per layer). This assignment strategy ensures that the number of nodes in higher layers decreases exponentially.</p>
-<p><strong>2. Layer-by-Layer Graph Construction</strong>:</p>
-<ul>
-<li>
-<p><strong>Top Layer Construction (Layer L)</strong>: Only includes nodes satisfying $l_{\max}(v_i) \geq L$, forming a sparse connected small-world graph.</p>
-</li>
-<li>
-<p><strong>Layer-by-Layer Expansion</strong>: In layer $l$, nodes include all those satisfying $l_{\max}(v_i) \geq l$, and each node maintains up to $M$ bidirectional edges.</p>
-</li>
-</ul>
-<h5 id="2-dynamic-insertion-strategy"><strong>(2) Dynamic Insertion Strategy</strong></h5>
-<p>When inserting a new node $v_{\text{new}}$, update the graph structure layer by layer according to the following rules (taking layer $l$ as an example):</p>
-<p><strong>1. Search for Current Layer Entry Point</strong>: Start from the top layer $L$, use a greedy algorithm to find the entry point $e_l$ in layer $l$ that is closest to $v_{\text{new}}$.</p>
-<p><strong>2. Local Neighborhood Exploration</strong>: In layer $l$, starting from $e_l$, expand the candidate set using a priority queue, retaining the $ef_{\text{Construction}}$ nearest nodes to $v_{\text{new}}$.</p>
-<p><strong>3. Connection Optimization</strong>: From the candidate set, select up to $M$ neighbors, satisfying:</p>
-<ul>
-<li>
-<p><strong>Nearest Neighbor Principle</strong>: Preferentially connect to the nearest nodes.</p>
-</li>
-<li>
-<p><strong>Diversity Constraint</strong>: Avoid local clustering by selecting edges with different directions (avoiding island phenomena) through heuristic algorithms.</p>
-</li>
-</ul>
-<h4 id="retrieval-mechanism-2"><strong>Retrieval Mechanism</strong></h4>
-<p>The search process of HNSW implements efficient navigation through a <strong>skip-list-like</strong> layer-by-layer refinement strategy. The steps are as follows:</p>
-<p><strong>1. Top Layer Entry Point Positioning</strong>: Start from a random node in the top layer $L$, execute a greedy algorithm to find the node $e_L$ closest to the query $q$ in this layer.</p>
-<p><strong>2. Layer-by-Layer Descent Search</strong>: Starting from $e_L$, based on the skip-list relationships between layers, find the neighbor closest to $q$ among the neighbors of $e_{L-1}$ in the next lower layer, and use it as the input for the next layer.</p>
-<p><strong>3. Bottom Layer Precise Retrieval</strong>: In layer 0, starting from the entry point $e_0$, use a dynamic candidate list algorithm similar to NN-Descent:</p>
-<ol>
-<li>Initialize the dynamic list $\mathcal{C}$, containing $e_0$ and its neighbors.</li>
-<li>Iteratively expand $\mathcal{C}$, maintaining the top $ef_{\text{Search}}$ nearest neighbors.</li>
-<li>Terminate when there is no update in the nearest neighbors for $\tau$ consecutive iterations, and return the Top-K results.</li>
-</ol>
-<h3 id="4-song">4. SONG</h3>
-<h4 id="design-motivation"><strong>Design Motivation</strong></h4>
-<img src="/product_files/vector_retrieval/SONG1.png" style="zoom:60%;display: block; margin-left: auto; margin-right: auto;"/>
-<div align="center">Figure 5: Traditional Graph-Based ANNS Search Process </div>
-<p>Approximate Nearest Neighbor Search (ANNS) based on graphs typically relies on three core data structures: <strong>priority queue, result heap, and visited record table</strong>. Its iterative search process is serial on a CPU:</p>
-<p><strong>1. Priority Queue (q)</strong>: Maintains candidate nodes to be expanded (sorted by distance).</p>
-<p><strong>2. Result Heap (TopK)</strong>: Stores the current K nearest results.</p>
-<p><strong>3. Visited Record Table (Visited)</strong>: Marks visited nodes to avoid redundant calculations.</p>
-<p>Taking the search process in Figure 5 as an example, traditional methods require iterative rounds: extracting the nearest node from the queue, calculating distances to its neighbors, and updating the result heap. However, <strong>95% of the computational time is spent on high-dimensional vector distance calculations</strong> (e.g., 1024-dimensional Euclidean distance). The single-threaded architecture of CPUs cannot parallelize this process efficiently. Even if query tasks are parallelized, a single complex query can still block the entire pipeline.</p>
-<h4 id="overall-architecture">Overall Architecture</h4>
-<img src="/product_files/vector_retrieval/SONG2.png" alt="image-20250324112131637" style="zoom:50%;display: block; margin-left: auto; margin-right: auto;" />
-<div align="center">Figure 6: SONG Overall Architecture </div>
-<p>The core innovation of SONG [13] lies in <strong>reconstructing the search pipeline</strong>, decoupling serial steps into GPU-friendly three-stage parallel tasks, as shown in Figure 6:</p>
-<h4 id="optimization-design">Optimization Design</h4>
-<h4 id="1-candidate-locating"><strong>1. Candidate Locating</strong></h4>
-<ul>
-<li>
-<p><strong>Objective</strong>: Load the neighbor lists of candidate nodes from global memory.</p>
-</li>
-<li>
-<p><strong>Optimization Strategies</strong>:</p>
-<ul>
-<li>
-<p><strong>Fixed Degree Graph Storage</strong>: Limit the number of neighbors per node (e.g., up to 64), pre-allocate contiguous space in global memory to avoid dynamic memory overhead.</p>
-</li>
-<li>
-<p><strong>Multi-query Batch Loading</strong>: Each GPU warp processes multiple queries&rsquo; candidate nodes simultaneously.</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="2-bulk-distance-computation"><strong>2. Bulk Distance Computation</strong></h4>
-<ul>
-<li>
-<p><strong>Parallelization Core</strong>: Decompose high-dimensional vector calculations into GPU thread-level tasks.</p>
-<ul>
-<li>
-<p><strong>Formula</strong>: The Euclidean distance $d(q,v)=\sqrt{\sum_{i=1}^{d}(q_i-v_i)^2}$ is broken down into $d$ parallel subtraction-square operations, with Warp-level thread cooperation for reduction and summation.</p>
-</li>
-<li>
-<p><strong>Memory Aligned Access</strong>: Vector data for the same node is stored contiguously, allowing single reads of 128 bytes (GPU cache line).</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="3-data-structure-update"><strong>3. Data Structure Update</strong></h4>
-<ul>
-<li>
-<p><strong>Lightweight Atomic Operations</strong>: A single thread is responsible for updating the queue, result heap, and visited records.</p>
-<ul>
-<li>
-<p><strong>TopK Heap Compression</strong>: Retain only the K nearest results, with a fixed heap capacity of $K_{\max}$ (e.g., K=100).</p>
-</li>
-<li>
-<p><strong>Cuckoo Filter [15] Replaces Hash Tables</strong>: Supports dynamic insertion and deletion.</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-cagra">5. CAGRA</h3>
-<img src="/product_files/vector_retrieval/CAGRA.png" alt="image-20250324135129178" style="zoom:50%;display: block; margin-left: auto; margin-right: auto;" />
-<div align="center">Figure 7: Schematic of CAGRA Graph Optimization Process (Left: Initial k-NN Graph; Middle: Rank Reordering; Right: Reverse Edge Enhancement) </div>
-<h4 id="1-initial-k-nn-graph-construction"><strong>(1) Initial k-NN Graph Construction</strong></h4>
-<p>Using a GPU-accelerated NN-Descent algorithm [11], the basic k-NN graph (k=2d~3d) is constructed. The process differs significantly from the CPU version of NN-Descent:</p>
-<ul>
-<li>
-<p><strong>Batch Reverse Neighbor Calculation</strong>:</p>
-<p>Convert the calculation of reverse neighbor relationships $R(v_i)$ into a GPU-friendly matrix transpose operation, utilizing shared memory to accelerate atomic operations. For example, with d=64, a single iteration can handle reverse relationship updates for $10^6$ nodes in parallel.</p>
-</li>
-<li>
-<p><strong>Dynamic Memory Pre-allocation</strong>:</p>
-<p>Pre-allocate global memory to eliminate dynamic expansion overhead. Each node maintains a fixed-capacity candidate queue (e.g., 128), with excess entries truncated.</p>
-</li>
-</ul>
-<h4 id="2-graph-structure-optimization"><strong>(2) Graph Structure Optimization</strong></h4>
-<p>Perform two levels of optimization on the initial k-NN graph to enhance search efficiency:</p>
-<p><strong>1. Rank-Based Reordering</strong>:</p>
-<p>For each node $v_i$&rsquo;s neighbor list $N(v_i)$, generate ranks based on original distances and move lower-rank edges (important connections) forward. This operation is fully parallelized on GPUs, allowing rank reordering for millions of nodes within one second.</p>
-<p><strong>2. Reverse Edge Enhancement</strong>:</p>
-<p>To improve graph connectivity, add reverse edges $v_j → v_i$ for each edge $v_i → v_j$, but limit the out-degree of each node to d (default d=64). Reverse edges are dynamically truncated based on the source node&rsquo;s rank to ensure continuous global memory access.</p>
-<h4 id="retrieval-mechanism-3">Retrieval Mechanism</h4>
-<img src="/product_files/vector_retrieval/CAGRA2.png" alt="image-20250324135335876" style="zoom:40%;display: block; margin-left: auto; margin-right: auto;" />
-<div align="center">Figure 8: CAGRA Search Process</div>
-<p>CAGRA [14]’s retrieval process has been systematically restructured for GPU architecture, with key innovations in <strong>full pipeline parallelization</strong> and <strong>dynamic candidate buffering mechanisms</strong>. Unlike hierarchical graph indexes such as HNSW, CAGRA abandons the serial path optimization strategy of layer-by-layer progression, instead enhancing GPU thread utilization through <strong>breadth-first parallel expansion</strong>. The specific implementation is as follows:</p>
-<h5 id="1-dual-buffer-architecture-design"><strong>(1) Dual Buffer Architecture Design</strong></h5>
-<p>CAGRA employs a dual dynamic buffering mechanism with <strong>Top-M Buffer</strong> and <strong>Candidate Buffer</strong> (as shown in Figure 8, Top-M Buffer stores the current best results in order; Candidate Buffer stores potential candidates unordered), achieving deep decoupling between computation and memory access:</p>
-<ul>
-<li>
-<p><strong>Top-M Buffer</strong> (Ordered Zone):</p>
-<ul>
-<li>
-<p>Fixed capacity of $M$ (e.g., $M=200$), storing the currently best candidate nodes in ascending order of distance.</p>
-</li>
-<li>
-<p>Uses a <strong>min-heap</strong> data structure, with insertion complexity $O(\log M)$, supporting dynamic replacement.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Candidate Buffer</strong> (Unordered Zone):</p>
-<ul>
-<li>
-<p>Capacity of $E$ (expansion factor, e.g., $E=64$), storing newly expanded candidate nodes.</p>
-</li>
-<li>
-<p>Unordered design avoids sorting overhead, implementing parallel writes using atomic operations.</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="2-parallel-search-strategy"><strong>(2) Parallel Search Strategy</strong></h5>
-<p>At the GPU warp level, batch expand and compute distances for candidate nodes. The specific process is as follows:</p>
-<p><strong>1. Random Seed Sampling</strong>: At query start, randomly select $E$ nodes (e.g., $E=64$) from the global graph as initial candidates, storing them in the <strong>Candidate Buffer</strong>.</p>
-<p><strong>2. Update Top_M</strong>: Merge the <strong>Top-M Buffer</strong> and <strong>Candidate Buffer</strong>, retaining the top $M$ nearest neighbors, and store them in the <strong>Top-M Buffer</strong>.</p>
-<p><strong>3. Update Candidate Buffer</strong>: From the <strong>Top-M Buffer</strong>, select unvisited nearest nodes to the query and add their neighbors to the <strong>Candidate Buffer</strong>.</p>
-<p><strong>4. Distance Calculation</strong>: Compute distances between nodes in the <strong>Candidate Buffer</strong> and the query. Return to step 2 until convergence (when all nodes in the <strong>Top-M Buffer</strong> are visited and are the nearest to the query).</p>
-<h2 id="why-use-gpu-acceleration-for-vector-retrieval">Why Use GPU Acceleration for Vector Retrieval?</h2>
-<p>In large-scale vector retrieval scenarios, traditional CPU architectures are increasingly showing performance bottlenecks. With the exponential growth of data scale and the continuous increase in vector dimensions, computational complexity has exploded, especially with high-dimensional vector distance calculations becoming a major time-consuming point. GPUs, with their powerful parallel computing capabilities, offer a new solution for accelerating vector retrieval.</p>
-<h3 id="1-parallel-computing-advantages-of-gpus"><strong>1. Parallel Computing Advantages of GPUs</strong></h3>
-<p>GPUs have thousands of cores capable of handling a large number of thread tasks simultaneously. For high-dimensional distance calculations in vector retrieval (such as Euclidean distance, cosine similarity, etc.), GPUs can decompose these calculations into fine-grained parallel tasks, where each thread is responsible for calculating the difference and square operations of one or more dimensions, followed by efficient reduction operations to complete the final summation. This highly parallelized computing approach gives GPUs a significant speed advantage over CPU-centric single-threaded processing when handling large-scale vector retrieval.</p>
-<h3 id="2-memory-bandwidth-and-data-throughput-capability"><strong>2. Memory Bandwidth and Data Throughput Capability</strong></h3>
-<p>Vector retrieval involves frequent vector loading and storage operations, which place extremely high demands on memory bandwidth. GPUs are equipped with high-bandwidth video memory that can quickly read and write large-scale vector data. Additionally, GPU memory access optimization mechanisms (such as shared memory, cache-aligned access) further enhance data throughput efficiency, reducing performance losses due to memory latency.</p>
-<h3 id="3-hardware-acceleration-for-algorithms"><strong>3. Hardware Acceleration for Algorithms</strong></h3>
-<p>Modern GPUs support specialized mathematical operation instruction sets (such as CUDA Core, Tensor Core), enabling efficient execution of matrix operations and vector operations. For example, during the bulk distance calculation phase, GPUs can leverage warp-level collaboration mechanisms to transform high-dimensional vector distance calculations into parallel subtraction, squaring, and reduction operations, achieving acceleration effects of tens or even hundreds of times. Moreover, for specific algorithms (such as Product Quantization PQ, graph index search), GPUs can further enhance performance through customized optimizations (such as fixed-degree graph storage, using Cuckoo Filters instead of hash tables).</p>
-<h3 id="4-support-for-real-time-requirements"><strong>4. Support for Real-Time Requirements</strong></h3>
-<p>In practical application scenarios such as medical pathology and recommendation systems, vector retrieval often needs to meet real-time response requirements at the millisecond or even microsecond level. The high throughput and low latency characteristics of GPUs enable them to easily handle real-time query tasks for vector databases ranging from millions to billions of entries. For instance, GPU-based indexing methods (such as SONG, CAGRA) can process hundreds of candidate nodes in parallel during a single query, significantly reducing retrieval time.</p>
-<h3 id="5-flexibility-and-scalability"><strong>5. Flexibility and Scalability</strong></h3>
-<p>GPUs are not only suitable for accelerating single tasks but can also be further enhanced through multi-GPU parallel expansion. For ultra-large-scale vector datasets, distributed GPU clusters can achieve cross-node collaborative computing to meet higher concurrency demands. Furthermore, GPU programming frameworks (such as CUDA) provide flexible development interfaces, allowing researchers to optimize algorithm designs for specific scenarios.</p>
-<h3 id="summary"><strong>Summary</strong></h3>
-<p>In conclusion, GPU acceleration has become one of the core technologies in the field of vector retrieval. Its outstanding parallel computing capabilities, efficient memory management mechanisms, and hardware optimizations for algorithms ensure that vector retrieval remains efficient and real-time even when dealing with massive data and high-dimensional spaces. Whether in academic research or industrial applications, GPU acceleration is driving the rapid development of vector retrieval technology, providing strong support for artificial intelligence and big data fields.</p>
+<div class="responsive-pdf">
+   <object 
+      data="/product_files/vector_retrieval/vector_retrieval.pdf#toolbar=0&view=FitH" 
+      type="application/pdf"
+      aria-label="PDF文档"
+      style="--aspect-ratio: 1/1.4142;"
+   >
+      <p>您的浏览器不支持PDF预览。</p>
+   </object>
+</div>
+<style>
+.responsive-pdf {
+   container-type: inline-size;
+   width: 100%;
+   overflow-x: hidden; /* 防止横向滚动条 */
+}
 
+.responsive-pdf object {
+   aspect-ratio: var(--aspect-ratio, 1/1.4142);
+   width: 100%;
+   height: auto;
+   border: 0;
+   background: transparent; /* 去除Adobe插件的灰色背景 */
+}
+
+@container (max-width: 768px) {
+   .responsive-pdf object {
+      aspect-ratio: 1/1.6; /* 移动端调整比例 */
+   }
+}
+</style>
 
 
 </div>
