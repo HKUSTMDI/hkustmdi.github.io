@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build output and caches
+out/
+.next/
+dist/
+build/
+tsconfig.tsbuildinfo
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# macOS metadata
+.DS_Store

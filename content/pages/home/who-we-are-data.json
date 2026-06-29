@@ -1,0 +1,40 @@
+{
+  "zh": {
+    "title": "我们是谁",
+    "description": "医疗数据智能实验室成立于 2023 年 5 月，隶属于香港科技大学（广州）信息枢纽，是一所聚焦 “医疗数据智能 + 病理诊断”，集教学、科研、创新实践与成果转化于一体的高水平医疗数据实验室。作为香港科技大学（广州）的重要教学实践平台，实验室承担 “医疗人工智能”“病理数据挖掘” 等交叉学科课程，采用 “科研 + 实践” 的培养模式，为 “医疗 + 人工智能” 交叉领域输送既懂病理临床需求、又能驾驭智能技术的复合型人才，为行业可持续发展注入新鲜血液。",
+    "focusAreas": [
+      {
+        "title": "解决病理诊断领域前沿的人工智能应用问题",
+        "description": "我们致力于在病理诊断领域探索和应用最前沿的人工智能技术，解决实际临床中的复杂问题。"
+      },
+      {
+        "title": "设计高效的自动和半自动标注算法",
+        "description": "针对大量病理诊断数据，我们开发高效的自动和半自动标注算法，提升临床效用并提供诊断结果参考。"
+      },
+      {
+        "title": "解决实际应用中的技术挑战",
+        "description": "我们专注于解决实际应用中的技术挑战，推动病理行业的智能发展，将科研成果转化为实际应用。"
+      }
+    ],
+    "mission": "我们的实验室专注于产学研结合，促进科研成果的转化与应用，并为粤港澳大湾区医疗健康产业的发展做出贡献。"
+  },
+  "en": {
+    "title": "Who We Are",
+    "description": "The Intelligent Medical Data Laboratory was established in May 2023 and is affiliated with the Information Hub of The Hong Kong University of Science and Technology (Guangzhou). The lab focuses on “Intelligent Medical Data and Pathological Diagnosis” and integrates education, research, innovation, and technology translation into a comprehensive, high-level research platform. As a key teaching and practice base of HKUST (Guangzhou), the laboratory offers interdisciplinary courses such as “Medical Artificial Intelligence” and “Pathological Data Mining.” Through a “research + practice” training model, it cultivates interdisciplinary talents who not only understand clinical and pathological needs but also master intelligent technologies. The lab is dedicated to nurturing the next generation of innovators in the intersection of medicine and AI, contributing to the sustainable development of the healthcare industry.",
+    "focusAreas": [
+      {
+        "title": "Solving cutting-edge AI application issues in the field of pathological diagnosis",
+        "description": "We are committed to exploring and applying cutting-edge artificial intelligence technologies in the field of pathological diagnosis to solve complex problems in actual clinical practice."
+      },
+      {
+        "title": "Designing efficient automatic and semi-automatic annotation algorithms",
+        "description": "For a vast amount of pathological diagnostic data, we develop efficient automatic and semi-automatic annotation algorithms to enhance clinical utility and provide diagnostic result interpretation references."
+      },
+      {
+        "title": "Overcoming technical challenges in real-world applications",
+        "description": "We focus on overcoming technical challenges in real-world applications to promote the intelligent development of the pathology industry and transform scientific research results into practical applications."
+      }
+    ],
+    "mission": "Our lab focuses on the combination of industry, education and research, promotes the transformation and application of scientific research results, and contributes to the development of the medical and health industry in the Guangdong-Hong Kong-Macao Greater Bay Area."
+  }
+}

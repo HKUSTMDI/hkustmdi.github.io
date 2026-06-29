@@ -1,0 +1,48 @@
+{
+  "zh": {
+    "title": "医疗数据产品研发",
+    "subtitle": "打造数据驱动的智能工具",
+    "description": "为了更好地管理和利用医疗数据资源，我们开发了一系列高效、智能的医疗数据产品，为科研人员和临床医生提供强大的数据处理能力。",
+    "products": [
+      {
+        "name": "Core（精准医疗辅助系统）",
+        "description": "面向医院和临床医生，Core系统整合多模态医疗数据（如影像、病历、基因组学等），利用专病大模型进行深度分析与融合，为肿瘤等复杂疾病的诊断、治疗方案制定提供科学依据，助力实现精准医疗。"
+      },
+      {
+        "name": "Care（院外随访管理平台）",
+        "description": "面向患者，Care平台致力于提供便捷、高效的院外健康管理服务。通过智能化的数据收集与分析，帮助患者进行疾病随访、健康监测和康复管理，实现连续性、个性化的医疗照护。"
+      },
+      {
+        "name": "智能检索系统",
+        "description": "我们研发的医疗数据检索与医疗图片检索系统，能帮助科研人员在庞大的数据库中快速、精准地定位所需信息。无论是查找特定病历，还是检索相似医学影像，我们的系统都能极大地提高科研效率，加速知识发现。"
+      },
+      {
+        "name": "医疗数据标注平台",
+        "description": "我们构建了高效、专业的医疗数据标注工具，支持对影像、病历、检验报告等多种类型数据进行精细化标注，为高质量的算法训练提供坚实基础。"
+      }
+    ]
+  },
+  "en": {
+    "title": "Medical Data Product Development",
+    "subtitle": "Creating Data-Driven Intelligent Tools",
+    "description": "To better manage and utilize healthcare data resources, we have developed a series of efficient and intelligent medical data products that provide researchers and clinicians with powerful data processing capabilities.",
+    "products": [
+      {
+        "name": "Core (Precision Medical Assistance System)",
+        "description": "Targeting hospitals and clinicians, the Core system integrates multimodal medical data (such as imaging, medical records, genomics, etc.), leveraging specific disease large models for in-depth analysis and integration, providing scientific evidence for the diagnosis and treatment planning of complex diseases like cancer, and helping achieve precision medicine."
+      },
+      {
+        "name": "Care (Outpatient Follow-up Management Platform)",
+        "description": "Targeting patients, the Care platform is dedicated to providing convenient and efficient outpatient health management services. Through intelligent data collection and analysis, it helps patients with disease follow-up, health monitoring, and rehabilitation management, achieving continuous and personalized medical care."
+      },
+      {
+        "name": "Intelligent Retrieval System",
+        "description": "Our developed medical data retrieval and medical image retrieval systems help researchers quickly and accurately locate needed information in large databases. Whether searching for specific medical records or retrieving similar medical images, our systems greatly enhance research efficiency and accelerate knowledge discovery."
+      },
+      {
+        "name": "Medical Data Annotation Platform",
+        "description": "We have constructed an efficient and professional medical data annotation tool that supports detailed annotation of various types of data such as images, medical records, and test reports, providing a solid foundation for high-quality algorithm training."
+      }
+    ]
+  }
+}

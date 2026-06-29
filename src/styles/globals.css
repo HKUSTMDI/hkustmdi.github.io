@@ -1,0 +1,539 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局样式 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+body {
+  color: #1f2937;
+  background: #ffffff;
+}
+
+/* iPhone安全区域样式 */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+  }
+}
+
+/* 确保页面背景为白色，包括安全区域 */
+html {
+  background-color: #ffffff;
+}
+
+/* 防止iOS下拉刷新时的蓝色背景 */
+body {
+  background-color: #ffffff !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 确保所有容器都有白色背景 */
+#__next {
+  background-color: #ffffff;
+}
+
+/* 全屏滚动样式 */
+.fullpage-fallback {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 1;
+}
+
+/* 响应式section内容 */
+@media (min-width: 2560px) {
+  .section-content {
+    max-width: 1600px;
+    padding: 3rem;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .section-content {
+    max-width: 1400px;
+    padding: 2.5rem;
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .section-content {
+    max-width: 1200px;
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .section-content {
+    max-width: 1000px;
+    padding: 1.75rem;
+    gap: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-content {
+    max-width: 90%;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 95%;
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .section {
+    min-height: 100vh;
+    padding-top: 4rem; /* 为导航栏留出空间 */
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* 全屏滚动导航点样式 */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #0ea5e9;
+  border-radius: 50%;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+  background: #0284c7;
+}
+
+/* 全屏滚动工具提示样式 */
+#fp-nav ul li .fp-tooltip {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* 内容样式 */
+.prose {
+  max-width: none;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.prose h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.prose h2 {
+  font-size: 1.875rem;
+  line-height: 1.3;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.prose strong {
+  font-weight: 600;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+/* 超宽屏幕优化 (3440px+) */
+@media (min-width: 3440px) {
+  .section-content {
+    max-width: 1800px;
+    padding: 4rem;
+    gap: 4rem;
+  }
+}
+
+/* 4K大屏幕优化 (2560px+) */
+@media (min-width: 2560px) {
+  .section-content {
+    max-width: 1600px;
+    padding: 3rem;
+  }
+}
+
+/* 大屏幕优化 (1920px - 2559px) */
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .section-content {
+    max-width: 1400px;
+    padding: 2.5rem;
+  }
+}
+
+/* 中等屏幕优化 (1440px - 1919px) - 适合14寸笔记本 */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .section-content {
+    max-width: 1200px;
+    padding: 2rem;
+  }
+}
+
+/* 小屏幕笔记本优化 (1024px - 1439px) */
+
+/* 平板优化 (768px - 1023px) */
+
+/* 小屏幕手机优化 (最大480px) */
+@media (max-width: 480px) {
+  .section-content {
+    padding: 0.75rem;
+    max-width: 98%;
+  }
+}
+
+/* 移动端优化 (最大640px) */
+@media (max-width: 640px) {
+  .prose h1 {
+    font-size: 1.875rem;
+  }
+  
+  .prose h2 {
+    font-size: 1.5rem;
+  }
+  
+  .prose h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Markdown内容移动端优化已移除 */
+}
+
+/* 加载动画 */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #0ea5e9;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 无障碍访问 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 焦点样式 */
+*:focus {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+/* 团队页面样式 */
+.people-page {
+  background-color: #ffffff;
+}
+
+/* 页面标题区域 */
+.page-header {
+  padding-top: 6rem; /* 为固定导航栏留出空间 */
+  padding-bottom: 4rem;
+}
+
+/* 负责人区域样式 */
+.leader-section {
+  position: relative;
+  margin: 60px 0;
+}
+
+.leader-avatar {
+  transition: transform 0.3s ease;
+}
+
+.leader-avatar:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+
+.member-card {
+  transition: all 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  border-color: #d1d5db;
+}
+
+.member-card:hover .member-avatar {
+  transform: scale(1.05);
+}
+
+/* 文字内容区域 */
+.member-card > div:last-child {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 行分割线 */
+.member-row {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.member-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* 响应式设计 - 大部分已由 Tailwind CSS 处理，只保留必要的自定义样式 */
+@media (max-width: 768px) {
+  .page-header {
+    padding-top: 5rem; /* 移动端稍微减少顶部间距 */
+    padding-bottom: 3rem;
+  }
+  
+  .leader-section {
+    margin: 40px 0;
+  }
+  
+  .leader-avatar {
+    position: static;
+    transform: none;
+    margin: 0 auto 20px;
+  }
+  
+  .leader-content {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding-top: 4.5rem; /* 小屏幕进一步减少顶部间距 */
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* CSS 变量已移除，现在使用 Tailwind CSS 类 */
+
+/* 导航栏1200px断点样式 */
+@media (min-width: 1200px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+  
+  .mobile-nav {
+    display: none !important;
+  }
+  
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .mobile-nav {
+    display: flex !important;
+  }
+}
+
+/* 移动端标题字体优化 */
+@media (max-width: 640px) {
+  .mobile-nav .mobile-title {
+    font-size: 0.75rem !important; /* 12px */
+    line-height: 1.2;
+  }
+}
+
+/* 强制小屏幕换行 */
+@media (max-width: 479px) {
+  nav .flex-shrink-0 .flex .mobile-title {
+    max-width: 120px !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    display: block !important;
+    line-height: 1.1 !important;
+    font-size: 0.625rem !important;
+  }
+}
+
+/* 确保大屏幕不换行 */
+@media (min-width: 480px) {
+  nav .flex-shrink-0 .flex .mobile-title {
+    white-space: nowrap !important;
+    max-width: none !important;
+    display: inline !important;
+  }
+}
+
+
+@media (max-width: 375px) {
+  nav .flex-shrink-0 .flex .mobile-title {
+    max-width: 100px !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    display: block !important;
+    line-height: 1 !important;
+    font-size: 0.5rem !important;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  .section {
+    page-break-inside: avoid;
+  }
+  
+  .background-image {
+    display: none;
+  }
+  
+  .leader-avatar {
+    position: static;
+    transform: none;
+    margin: 0 auto 20px;
+  }
+  
+  .member-card {
+    break-inside: avoid;
+  }
+}

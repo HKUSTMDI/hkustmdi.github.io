@@ -1,0 +1,156 @@
+{
+  "zh": {
+    "title": "我们的合作伙伴",
+    "partners": [
+      {
+        "name": "安必平医药科技公司",
+        "logo": "/static/website/images/home/abp.png",
+        "alt": "安必平医药科技有限公司",
+        "caption": "安必平医药科技公司"
+      },
+      {
+        "name": "河北医科大学附属第四医院",
+        "logo": "/static/website/images/home/hebei_hos.png",
+        "alt": "河北医科大学附属第四医院",
+        "caption": "河北医科大学附属第四医院"
+      },
+      {
+        "name": "武汉同济医学院",
+        "logo": "/static/website/images/home/tongji_hos.png",
+        "alt": "武汉同济医学院",
+        "caption": "武汉同济医学院"
+      },
+      {
+        "name": "北京协和医学院",
+        "logo": "/static/website/images/home/xiehe.jpg",
+        "alt": "中国医学科学院北京协和医学院",
+        "caption": "北京协和医学院"
+      },
+      {
+        "name": "成都妇女儿童中心医院",
+        "logo": "/static/website/images/home/chengduwcch.png",
+        "alt": "电子科技大学医学院附属妇女儿童医院",
+        "caption": "电子科技大学医学院附属妇女儿童医院"
+      },
+      {
+        "name": "鄂尔多斯市妇幼保健院",
+        "logo": "/static/website/images/home/eerduosi.png",
+        "alt": "鄂尔多斯市妇幼保健院",
+        "caption": "鄂尔多斯市妇幼保健院"
+      },
+      {
+        "name": "杭州医学院",
+        "logo": "/static/website/images/home/hangzhoumc.jpeg",
+        "alt": "杭州医学院",
+        "caption": "杭州医学院"
+      },
+      {
+        "name": "深圳市妇幼保健院",
+        "logo": "/static/website/images/home/shenzhenmch.png",
+        "alt": "深圳市妇幼保健院",
+        "caption": "深圳市妇幼保健院"
+      },
+      {
+        "name": "中山大学附属第一医院",
+        "logo": "/static/website/images/home/sys_hos.png",
+        "alt": "中山大学附属第一医院",
+        "caption": "中山大学附属第一医院"
+      },
+      {
+        "name": "浙江省肿瘤医院",
+        "logo": "/static/website/images/home/zhejiangch.jpeg",
+        "alt": "浙江省肿瘤医院",
+        "caption": "浙江省肿瘤医院"
+      },
+      {
+        "name": "中山大学附属第六医院",
+        "logo": "/static/website/images/home/zhongshan6.jpeg",
+        "alt": "中山大学附属第六医院",
+        "caption": "中山大学附属第六医院"
+      },
+      {
+        "name": "中山大学附属第七医院",
+        "logo": "/static/website/images/home/zhongshan7.jpeg",
+        "alt": "中山大学附属第七医院",
+        "caption": "中山大学附属第七医院"
+      }
+    ]
+  },
+  "en": {
+    "title": "Our Partners",
+    "partners": [
+      {
+        "name": "ABP Medical Technology",
+        "logo": "/static/website/images/home/abp.png",
+        "alt": "ABP Medical Technology Co., Ltd.",
+        "caption": "ABP Medical Technology Co., Ltd."
+      },
+      {
+        "name": "The Affiliated Women's and Children's Hospital, School of Medicine, UESTC",
+        "logo": "/static/website/images/home/chengduwcch.png",
+        "alt": "The Affiliated Women's and Children's Hospital, School of Medicine, UESTC",
+        "caption": "The Affiliated Women's and Children's Hospital, School of Medicine, UESTC"
+      },
+      {
+        "name": "Ordos Maternal and Child Health Hospital",
+        "logo": "/static/website/images/home/eerduosi.png",
+        "alt": "Ordos City Maternal and Child Health Hospital",
+        "caption": "Ordos City Maternal and Child Health Hospital"
+      },
+      {
+        "name": "Hangzhou Medical College",
+        "logo": "/static/website/images/home/hangzhoumc.jpeg",
+        "alt": "Hangzhou Medical College",
+        "caption": "Hangzhou Medical College"
+      },
+      {
+        "name": "The Fourth Hospital of Hebei Medical University",
+        "logo": "/static/website/images/home/hebei_hos.png",
+        "alt": "The Fourth Hospital of Hebei Medical University",
+        "caption": "The Fourth Hospital of Hebei Medical University"
+      },
+      {
+        "name": "Shenzhen Maternity & Child Healthcare Hospital",
+        "logo": "/static/website/images/home/shenzhenmch.png",
+        "alt": "Shenzhen Maternity & Child Healthcare Hospital",
+        "caption": "Shenzhen Maternity & Child Healthcare Hospital"
+      },
+      {
+        "name": "The First Affiliated Hospital, Sun Yat-sen University",
+        "logo": "/static/website/images/home/sys_hos.png",
+        "alt": "The First Affiliated Hospital, Sun Yat-sen University",
+        "caption": "The First Affiliated Hospital, Sun Yat-sen University"
+      },
+      {
+        "name": "Tongji Hospital",
+        "logo": "/static/website/images/home/tongji_hos.png",
+        "alt": "Tongji Hospital",
+        "caption": "Tongji Hospital Tongji Medical College of HUST"
+      },
+      {
+        "name": "Chinese Academy of Medical Sciences & Peking Union Medical College",
+        "logo": "/static/website/images/home/xiehe.jpg",
+        "alt": "Chinese Academy of Medical Sciences & Peking Union Medical College",
+        "caption": "Chinese Academy of Medical Sciences & Peking Union Medical College"
+      },
+      {
+        "name": "Zhejiang Cancer Hospital",
+        "logo": "/static/website/images/home/zhejiangch.jpeg",
+        "alt": "Zhejiang Cancer Hospital",
+        "caption": "Zhejiang Cancer Hospital"
+      },
+      {
+        "name": "The Sixth Affiliated Hospital, Sun Yat-sen University",
+        "logo": "/static/website/images/home/zhongshan6.jpeg",
+        "alt": "The Sixth Affiliated Hospital, Sun Yat-sen University",
+        "caption": "The Sixth Affiliated Hospital, Sun Yat-sen University"
+      },
+      {
+        "name": "The Seventh Affiliated Hospital, Sun Yat-sen University",
+        "logo": "/static/website/images/home/zhongshan7.jpeg",
+        "alt": "The Seventh Affiliated Hospital, Sun Yat-sen University",
+        "caption": "The Seventh Affiliated Hospital, Sun Yat-sen University"
+      }
+    ]
+  }
+}

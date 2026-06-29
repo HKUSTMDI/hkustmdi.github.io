@@ -1,0 +1,74 @@
+{
+  "zh": {
+    "title": "我们在做什么",
+    "description": "我们通过 \"产、学、研、医\" 的深度融合，将理论研究与临床实践紧密结合。我们不仅是技术开发者，更是医疗领域的探索者。与三甲医院的合作使我们能够直接接触真实世界的医疗挑战，确保我们的技术和产品真正服务于临床需求，并产生实际价值。",
+    "coreTitle": "赋能智慧医疗，驱动专病研究",
+    "coreDescription": "我们的核心工作之一是研发针对特定疾病领域的专病大模型。我们深信，人工智能在医疗领域的价值不仅在于通用能力的提升，更在于对特定疾病的深度洞察与精准赋能。",
+    "dataIntegration": {
+      "title": "数据融合与治理",
+      "description": "我们与顶尖三甲医院紧密合作，系统地汇聚和整合多源异构的临床数据，包括但不限于：",
+      "items": [
+        {
+          "title": "医疗影像数据",
+          "description": "病理图片、CT、MRI、X光、超声等高分辨率影像。"
+        },
+        {
+          "title": "结构化电子病历",
+          "description": "包含检验报告、诊断记录、手术记录等。"
+        },
+        {
+          "title": "非结构化临床数据",
+          "description": "如病历、护理记录、语音转录等文本信息。"
+        },
+        {
+          "title": "多组学数据",
+          "description": "如基因组学、蛋白质组学等生物分子数据。"
+        }
+      ]
+    },
+    "modelBuilding": {
+      "title": "模型构建与训练",
+      "description": "基于海量的专病数据，我们运用前沿的深度学习技术，构建和训练多模态、多任务的大模型。这些模型能够理解和处理不同类型的数据，从复杂的影像中提取病理特征，从文本中挖掘潜在的疾病关联，并从中学习人类专家的诊断与决策逻辑。"
+    },
+    "clinicalValidation": {
+      "title": "临床验证与应用",
+      "description": "我们与临床医生共同进行模型的迭代与验证，确保模型输出的洞察和辅助决策建议是可靠、可解释的，并且能够无缝集成到真实的临床工作流中。我们的目标是构建一个能够辅助医生进行精准诊断、个性化治疗方案制定以及疾病风险预测的\"智能大脑\"，最终提升医疗质量，推动医学科研的突破性进展。"
+    }
+  },
+  "en": {
+    "title": "What We Do",
+    "description": "We are committed to deeply integrating \"industry, academia, research, and medicine,\" closely combining theoretical research with clinical practice. We are not only technology developers but also explorers in the medical field. Our collaboration with top-tier hospitals allows us to directly address real-world medical challenges, ensuring that our technologies and products genuinely serve clinical needs and create actual value.",
+    "coreTitle": "Empowering Smart Healthcare, Driving Specific Disease Research",
+    "coreDescription": "One of our core activities is the development of large models for specific disease areas. We firmly believe that the value of artificial intelligence in healthcare lies not only in enhancing general capabilities but also in providing deep insights and precise empowerment for specific diseases.",
+    "dataIntegration": {
+      "title": "Data Integration and Governance",
+      "description": "We collaborate closely with leading top-tier hospitals to systematically aggregate and integrate multi-source heterogeneous clinical data, including but not limited to:",
+      "items": [
+        {
+          "title": "Medical Imaging Data",
+          "description": "High-resolution images such as pathology pictures, CT, MRI, X-ray, ultrasound, etc."
+        },
+        {
+          "title": "Structured Electronic Medical Records",
+          "description": "Including test reports, diagnostic records, surgical records, and more."
+        },
+        {
+          "title": "Unstructured Clinical Data",
+          "description": "Textual information such as medical records, nursing notes, speech transcripts, etc."
+        },
+        {
+          "title": "Multi-omics Data",
+          "description": "Bio-molecular data such as genomics, proteomics, etc."
+        }
+      ]
+    },
+    "modelBuilding": {
+      "title": "Model Building and Training",
+      "description": "Based on extensive specific disease data, we employ cutting-edge deep learning technologies to build and train large multimodal, multitask models. These models can understand and process different types of data, extract pathological features from complex images, mine potential disease associations from texts, and learn the diagnostic and decision-making logic of human experts."
+    },
+    "clinicalValidation": {
+      "title": "Clinical Validation and Application",
+      "description": "We collaborate with clinical doctors to iterate and validate models, ensuring that the insights and decision support suggestions provided by the models are reliable, interpretable, and seamlessly integrated into real clinical workflows. Our goal is to create an \"intelligent brain\" that aids doctors in precise diagnosis, personalized treatment planning, and disease risk prediction, ultimately improving healthcare quality and advancing breakthrough progress in medical research."
+    }
+  }
+}
